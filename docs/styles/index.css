@@ -144,7 +144,11 @@ html, body {
 .content {
   flex: 1 0 auto;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  background-size: auto;
+  background-position: 50% 50%;
+  background-image: url(../assets/img/content-texture.png);
+  background-repeat: repeat; }
 
 .header {
   display: flex;
