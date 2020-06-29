@@ -585,9 +585,10 @@ html, body {
       .category-item__desc .mod-dark {
         color: #4c3a2f; }
     .category-item__price {
-      font-family: "Roboto Black";
+      font-family: "Roboto";
       font-size: 20px;
       line-height: 1;
+      font-weight: 900;
       color: #a92925;
       text-transform: uppercase;
       margin-bottom: 9px;
@@ -626,13 +627,14 @@ html, body {
       .category-item__btn:hover {
         background-color: #ffde94; }
     .category-item__counter {
-      font-family: "Roboto Black";
+      font-family: "Roboto";
       width: 70px;
       text-align: center;
       background-color: transparent;
       outline: none;
       border: none;
       font-size: 18px;
+      font-weight: 900;
       color: #4c3a2f;
       text-transform: uppercase;
       font-weight: normal;
@@ -968,9 +970,10 @@ html, body {
   .item-info {
     margin-bottom: 30px; }
   .item__name {
-    font-family: "Roboto Black";
+    font-family: "Roboto";
     font-size: 24px;
     line-height: 1.2;
+    font-weight: 900;
     color: #ebaf29;
     text-transform: uppercase;
     margin-bottom: 18px; }
@@ -997,9 +1000,10 @@ html, body {
     background-color: #dcdcdc;
     margin-bottom: 16px; }
   .item__price {
-    font-family: "Roboto Black";
+    font-family: "Roboto";
     font-size: 20px;
     line-height: 22px;
+    font-weight: 900;
     color: #a92925;
     margin-bottom: 16px; }
   .item__buttons {
@@ -1025,13 +1029,14 @@ html, body {
     .item__btn:hover {
       background-color: #ffde94; }
   .item__counter {
-    font-family: "Roboto Black";
+    font-family: "Roboto";
     width: 70px;
     text-align: center;
     background-color: transparent;
     outline: none;
     border: none;
     font-size: 18px;
+    font-weight: 900;
     color: #a92925;
     text-transform: uppercase;
     font-weight: normal;

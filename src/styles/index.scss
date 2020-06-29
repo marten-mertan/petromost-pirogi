@@ -550,9 +550,10 @@ html, body{
             }
         }
         &__price{
-            font-family: "Roboto Black";
+            font-family: "Roboto";
             font-size: 20px;
             line-height: 1;
+            font-weight: 900;
             color: #a92925;
             text-transform: uppercase;
             margin-bottom: 9px;
@@ -601,13 +602,14 @@ html, body{
 
         }
         &__counter{
-            font-family: "Roboto Black";
+            font-family: "Roboto";
             width: 70px;
             text-align: center;
             background-color: transparent;
             outline: none;
             border: none;
             font-size: 18px;
+            font-weight: 900;
             color: #4c3a2f;
             text-transform: uppercase;
             font-weight: normal;
@@ -1000,9 +1002,10 @@ html, body{
 
     }
     &__name{
-        font-family: "Roboto Black";
+        font-family: "Roboto";
         font-size: 24px;
         line-height: 1.2;
+        font-weight: 900;
         color: #ebaf29;
         text-transform: uppercase;
         margin-bottom: 18px;
@@ -1038,9 +1041,10 @@ html, body{
         margin-bottom: 16px;
     }
     &__price{
-        font-family: "Roboto Black";
+        font-family: "Roboto";
         font-size: 20px;
         line-height: 22px;
+        font-weight: 900;
         color: #a92925;
         margin-bottom: 16px;
     }
@@ -1072,13 +1076,14 @@ html, body{
 
     }
     &__counter{
-        font-family: "Roboto Black";
+        font-family: "Roboto";
         width: 70px;
         text-align: center;
         background-color: transparent;
         outline: none;
         border: none;
         font-size: 18px;
+        font-weight: 900;
         color: #a92925;
         text-transform: uppercase;
         font-weight: normal;
