@@ -16,7 +16,57 @@
             <div class="header-top">
                 <div class="container">
                     <div class="header-top-content">
-                        HEADER-TOP
+                        <a class="header-top-logo" href="/"><span class="mod-red">Online</span> <span class="mod-green">Петромост</span></a>
+                        <span class="header-top-address">
+                            Ваш адрес:
+                            <a href="#" class="js-select-city">
+                                <span class="baloon-select-city-tail js-select-city-baloon"></span>
+                                Введите адрес
+                            </a>
+                        </span>
+                        <div class="baloon-select-city js-select-city-baloon">
+                            <p class="baloon-select-city-top">ВНИМАНИЕ. Для того, чтобы выбрать доступные для заказа товары, введите адрес доставки</p>
+                            <form class="baloon-select-city-form" action="">
+                                <p>Выберите город:</p>
+                                <div class="baloon-select-city-row">
+                                    <a class="baloon-select-city-form__city js-select-city-link active" href="#">Архангельск</a>
+                                    <a class="baloon-select-city-form__city js-select-city-link" href="#">Северодвинск</a>
+                                </div>
+                                <p>Введите ваш адрес:</p>
+                                <div class="baloon-select-city-row mod-address">
+                                    <label class="baloon-select-city-form__input street">
+                                        <input class="inp" type="text" name="street" placeholder=" ">
+                                        <span>Улица:</span>
+                                    </label>
+                                    <label class="baloon-select-city-form__input building">
+                                        <input class="inp" type="text" name="building" placeholder=" ">
+                                        <span>Дом:</span>
+                                    </label>
+                                    <label class="baloon-select-city-form__input apartment">
+                                        <input class="inp" type="text" name="apt" placeholder=" ">
+                                        <span>Кв:</span>
+                                    </label>
+                                </div>
+                                <div class="baloon-select-city-row mod-comment">
+                                    <label class="baloon-select-city-form__input">
+                                        <input class="inp" type="text" name="comment" placeholder=" ">
+                                        <span>Примечание (корпус, секция, подъезд):</span>
+                                    </label>
+                                </div>
+                                <div class="baloon-select-city-row mod-buttons">
+                                    <button class="baloon-select-city-form__button submit">Применить</button>
+                                    <button class="baloon-select-city-form__button js-baloon-close">Отложить</button>
+                                </div>
+                            </form>
+                        </div>
+                        <a class="header-top-vk" target="_blank" href="http://vk.com/petromost">Мы Вконтакте</a>
+                        <a href="/" class="header-top-auth">Личный кабинет</a>
+                        
+                    </div>
+                    <div class="selectSite">
+                        <span class="destop">
+                        </span>
+                        
                     </div>
                 </div>
             </div>
@@ -68,12 +118,12 @@
                                     <button type="submit" class="header-search__button"></button>
                                 </div>
                             </form>
-                            <div class="header-cart">
+                            <a href="/" class="header-cart">
                                 <div class="header-cart-wrapper">
                                     <img src="assets/img/basket.png" alt="basket">
                                     <span>25 тов., 2 578 руб.</span>
                                 </div>
-                            </div>
+                            </a>
 
                         </div>
                     </div>
@@ -83,13 +133,331 @@
                 
             </div>
         </header>
+        <div class="cart-mini js-cart-mini">
+            <div class="cart-mini-left">
+                <img src="assets/img/basket-white.png" alt="basket">
+                <span class="cart-mini__counter">25</span>
+            </div>
+            <div class="cart-mini-row">
+                <span class="cart-mini__name">Корзина</span>
+                <span class="cart-mini__price">25 тов., 15 000руб.</span>
+            </div>
+            <div class="cart-mini-row">
+                <div class="cart-mini-item">
+                    <div class="cart-mini-item__name">
+                        Пирог ягодный “Петровские пироги”
+                    </div>
+                    
+                    <div class="cart-mini-item__buttons">
+                        <span class="cart-mini-item__btn js-minus">-</span>
+                        <input class="cart-mini-item__counter js-input" type="tel" value="1" data-max="24" readonly>
+                        <span class="cart-mini-item__btn js-plus">+</span>
+                    </div>
+                    <div class="cart-mini-item__price">
+                        10 500 руб.
+                    </div>
+                </div>
+            </div>
+            <div class="cart-mini-row">
+                <div class="cart-mini-item">
+                    <div class="cart-mini-item__name">
+                        Пирог ягодный “Петровские пироги”
+                    </div>
+                    
+                    <div class="cart-mini-item__buttons">
+                        <span class="cart-mini-item__btn js-minus">-</span>
+                        <input class="cart-mini-item__counter js-input" type="tel" value="1" data-max="24" readonly>
+                        <span class="cart-mini-item__btn js-plus">+</span>
+                    </div>
+                    <div class="cart-mini-item__price">
+                        10 500 руб.
+                    </div>
+                </div>
+            </div>
+            <div class="cart-mini-row">
+                <div class="cart-mini-item">
+                    <div class="cart-mini-item__name">
+                        Пирог ягодный “Петровские пироги”
+                    </div>
+                    
+                    <div class="cart-mini-item__buttons">
+                        <span class="cart-mini-item__btn js-minus">-</span>
+                        <input class="cart-mini-item__counter js-input" type="tel" value="1" data-max="24" readonly>
+                        <span class="cart-mini-item__btn js-plus">+</span>
+                    </div>
+                    <div class="cart-mini-item__price">
+                        10 500 руб.
+                    </div>
+                </div>
+            </div>
+            <div class="cart-mini__all">
+                ИТОГО: 2 340 руб.
+            </div>
+            <div class="cart-mini-bottom">
+                <a class="cart-mini__btn js-cart-mini-close" href="/">
+                    Продолжить покупки
+                </a>
+                <a class="cart-mini__btn mod-red" href="/">
+                    Перейти в корзину
+                </a>
+            </div>
+        </div>
         <div class="content">
             <div class="container">
+                <div class="banner">
+                    <a href="/">
+                        <img src="assets/img/banner.jpg" alt="banner">
+                    </a>
+                </div>
+            </div>
+            <div class="container">
                 <aside class="aside">
-                    ASIDE
+                    <ul class="aside-menu">
+                        <li class="aside-menu__item">
+                            <a href="/">
+                                <img src="assets/img/honey.svg" alt="honey">
+                                <span class="aside-menu__item--name">Сладкие пироги</span>
+                            </a>
+                        </li>
+                        <li class="aside-menu__item">
+                            <a href="/">
+                                <img src="assets/img/pie.svg" alt="honey">
+                                <span class="aside-menu__item--name">Сытные пироги</span>
+                            </a>
+                        </li>
+                        <li class="aside-menu__item">
+                            <a href="/">
+                                <img src="assets/img/pie-2.svg" alt="honey">
+                                <span class="aside-menu__item--name">Постные пироги</span>
+                            </a>
+                        </li>
+                    </ul>
                 </aside>
                 <main class="main">
-                    MAIN
+                    <div class="catalog">
+                        <div class="category-title">
+                            <span class="category-title__decor"></span>
+                            <span class="category-title__text">Популярные пироги</span>
+                            <span class="category-title__decor"></span>
+                        </div>
+                        <div class="category">
+                            <div class="category-item">
+                                <a class="category-item-link" href="item.html">
+                                    <div class="category-item__img">
+                                        <img src="assets/img/item-1.png" alt="пирог">
+                                    </div>
+                                    <div class="category-item-wrapper">
+                                        <div class="category-item__name">
+                                            ПИРОГ ЯГОДНЫЙ </br> «ПЕТРОВСКИЕ ПИРОГИ»
+                                        </div>
+                                        <div class="category-item__desc">
+                                            <span class="mod-dark">Состав: </span>мука, сахар, яйцо куриное,  пшеничная мука, яблоко, раз
+                                        </div>
+                                        <div class="category-item__price">
+                                            1 250 руб. / шт.
+                                        </div>
+                                        <div class="category-item__all">
+                                            Итого: 3 750 руб.
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="category-item__buttons">
+                                    <span class="category-item__btn js-minus">-</span>
+                                    <input class="category-item__counter js-input" type="tel" value="1" data-max="24" readonly>
+                                    <span class="category-item__btn js-plus">+</span>
+                                </div>
+                            </div>
+                            <div class="category-item">
+                                <a class="category-item-link" href="item.html">
+                                    <div class="category-item__img">
+                                        <img src="assets/img/item-2.png" alt="пирог">
+                                    </div>
+                                    <div class="category-item-wrapper">
+                                        <div class="category-item__name">
+                                            ПИРОГ ЯГОДНЫЙ </br> «ПЕТРОВСКИЕ ПИРОГИ»
+                                        </div>
+                                        <div class="category-item__desc">
+                                            <span class="mod-dark">Состав: </span>мука, сахар, яйцо куриное,  пшеничная мука, яблоко, раз
+                                        </div>
+                                        <div class="category-item__price">
+                                            1 250 руб. / шт.
+                                        </div>
+                                        <div class="category-item__all">
+                                            Итого: 3 750 руб.
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="category-item__buttons">
+                                    <span class="category-item__btn js-minus">-</span>
+                                    <input class="category-item__counter js-input" type="tel" value="1" data-max="24" readonly>
+                                    <span class="category-item__btn js-plus">+</span>
+                                </div>
+                            </div>
+                            <div class="category-item">
+                                <a class="category-item-link" href="item.html">
+                                    <div class="category-item__img">
+                                        <img src="assets/img/item-3.png" alt="пирог">
+                                    </div>
+                                    <div class="category-item-wrapper">
+                                        <div class="category-item__name">
+                                            ПИРОГ ЯГОДНЫЙ </br> «ПЕТРОВСКИЕ ПИРОГИ»
+                                        </div>
+                                        <div class="category-item__desc">
+                                            <span class="mod-dark">Состав: </span>мука, сахар, яйцо куриное,  пшеничная мука, яблоко, раз
+                                        </div>
+                                        <div class="category-item__price">
+                                            1 250 руб. / шт.
+                                        </div>
+                                        <div class="category-item__all">
+                                            Итого: 3 750 руб.
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="category-item__buttons">
+                                    <span class="category-item__btn js-minus">-</span>
+                                    <input class="category-item__counter js-input" type="tel" value="1" data-max="24" readonly>
+                                    <span class="category-item__btn js-plus">+</span>
+                                </div>
+                            </div>
+                            <div class="category-item">
+                                <a class="category-item-link" href="item.html">
+                                    <div class="category-item__img">
+                                        <img src="assets/img/item-1.png" alt="пирог">
+                                    </div>
+                                    <div class="category-item-wrapper">
+                                        <div class="category-item__name">
+                                            ПИРОГ ЯГОДНЫЙ </br> «ПЕТРОВСКИЕ ПИРОГИ»
+                                        </div>
+                                        <div class="category-item__desc">
+                                            <span class="mod-dark">Состав: </span>мука, сахар, яйцо куриное,  пшеничная мука, яблоко, раз
+                                        </div>
+                                        <div class="category-item__price">
+                                            1 250 руб. / шт.
+                                        </div>
+                                        <div class="category-item__all">
+                                            Итого: 3 750 руб.
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="category-item__buttons">
+                                    <span class="category-item__btn js-minus">-</span>
+                                    <input class="category-item__counter js-input" type="tel" value="1" data-max="24" readonly>
+                                    <span class="category-item__btn js-plus">+</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category-title">
+                            <span class="category-title__decor"></span>
+                            <span class="category-title__text">Сладкие пироги</span>
+                            <span class="category-title__decor"></span>
+                        </div>
+                        <div class="category">
+                            <div class="category-item">
+                                <a class="category-item-link" href="item.html">
+                                    <div class="category-item__img">
+                                        <img src="assets/img/item-1.png" alt="пирог">
+                                    </div>
+                                    <div class="category-item-wrapper">
+                                        <div class="category-item__name">
+                                            ПИРОГ ЯГОДНЫЙ </br> «ПЕТРОВСКИЕ ПИРОГИ»
+                                        </div>
+                                        <div class="category-item__desc">
+                                            <span class="mod-dark">Состав: </span>мука, сахар, яйцо куриное,  пшеничная мука, яблоко, раз
+                                        </div>
+                                        <div class="category-item__price">
+                                            1 250 руб. / шт.
+                                        </div>
+                                        <div class="category-item__all">
+                                            Итого: 3 750 руб.
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="category-item__buttons">
+                                    <span class="category-item__btn js-minus">-</span>
+                                    <input class="category-item__counter js-input" type="tel" value="1" data-max="24" readonly>
+                                    <span class="category-item__btn js-plus">+</span>
+                                </div>
+                            </div>
+                            <div class="category-item">
+                                <a class="category-item-link" href="item.html">
+                                    <div class="category-item__img">
+                                        <img src="assets/img/item-2.png" alt="пирог">
+                                    </div>
+                                    <div class="category-item-wrapper">
+                                        <div class="category-item__name">
+                                            ПИРОГ ЯГОДНЫЙ </br> «ПЕТРОВСКИЕ ПИРОГИ»
+                                        </div>
+                                        <div class="category-item__desc">
+                                            <span class="mod-dark">Состав: </span>мука, сахар, яйцо куриное,  пшеничная мука, яблоко, раз
+                                        </div>
+                                        <div class="category-item__price">
+                                            1 250 руб. / шт.
+                                        </div>
+                                        <div class="category-item__all">
+                                            Итого: 3 750 руб.
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="category-item__buttons">
+                                    <span class="category-item__btn js-minus">-</span>
+                                    <input class="category-item__counter js-input" type="tel" value="1" data-max="24" readonly>
+                                    <span class="category-item__btn js-plus">+</span>
+                                </div>
+                            </div>
+                            <div class="category-item">
+                                <a class="category-item-link" href="item.html">
+                                    <div class="category-item__img">
+                                        <img src="assets/img/item-3.png" alt="пирог">
+                                    </div>
+                                    <div class="category-item-wrapper">
+                                        <div class="category-item__name">
+                                            ПИРОГ ЯГОДНЫЙ </br> «ПЕТРОВСКИЕ ПИРОГИ»
+                                        </div>
+                                        <div class="category-item__desc">
+                                            <span class="mod-dark">Состав: </span>мука, сахар, яйцо куриное,  пшеничная мука, яблоко, раз
+                                        </div>
+                                        <div class="category-item__price">
+                                            1 250 руб. / шт.
+                                        </div>
+                                        <div class="category-item__all">
+                                            Итого: 3 750 руб.
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="category-item__buttons">
+                                    <span class="category-item__btn js-minus">-</span>
+                                    <input class="category-item__counter js-input" type="tel" value="1" data-max="24" readonly>
+                                    <span class="category-item__btn js-plus">+</span>
+                                </div>
+                            </div>
+                            <div class="category-item">
+                                <a class="category-item-link" href="item.html">
+                                    <div class="category-item__img">
+                                        <img src="assets/img/item-1.png" alt="пирог">
+                                    </div>
+                                    <div class="category-item-wrapper">
+                                        <div class="category-item__name">
+                                            ПИРОГ ЯГОДНЫЙ </br> «ПЕТРОВСКИЕ ПИРОГИ»
+                                        </div>
+                                        <div class="category-item__desc">
+                                            <span class="mod-dark">Состав: </span>мука, сахар, яйцо куриное,  пшеничная мука, яблоко, раз
+                                        </div>
+                                        <div class="category-item__price">
+                                            1 250 руб. / шт.
+                                        </div>
+                                        <div class="category-item__all">
+                                            Итого: 3 750 руб.
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="category-item__buttons">
+                                    <span class="category-item__btn js-minus">-</span>
+                                    <input class="category-item__counter js-input" type="tel" value="1" data-max="24" readonly>
+                                    <span class="category-item__btn js-plus">+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </main>
             </div>
         </div>
@@ -137,5 +505,8 @@
             </div>
         </footer>
     </div>
+
+    <script src="scripts/vendor/jquery-1.8.3.min.js"></script>
+    <script src="scripts/bundle.js"></script>
 </body>
 </html>

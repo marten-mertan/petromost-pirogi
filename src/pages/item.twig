@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Петромост Пироги</title>
+    
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <div class="site">
+        <header class="header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="header-top-content">
+                        <a class="header-top-logo" href="/"><span class="mod-red">Online</span> <span class="mod-green">Петромост</span></a>
+                        <span class="header-top-address">
+                            Ваш адрес:
+                            <a href="#" class="js-select-city">
+                                <span class="baloon-select-city-tail js-select-city-baloon"></span>
+                                Введите адрес
+                            </a>
+                        </span>
+                        <div class="baloon-select-city js-select-city-baloon">
+                            <p class="baloon-select-city-top">ВНИМАНИЕ. Для того, чтобы выбрать доступные для заказа товары, введите адрес доставки</p>
+                            <form class="baloon-select-city-form" action="">
+                                <p>Выберите город:</p>
+                                <div class="baloon-select-city-row">
+                                    <a class="baloon-select-city-form__city js-select-city-link active" href="#">Архангельск</a>
+                                    <a class="baloon-select-city-form__city js-select-city-link" href="#">Северодвинск</a>
+                                </div>
+                                <p>Введите ваш адрес:</p>
+                                <div class="baloon-select-city-row mod-address">
+                                    <label class="baloon-select-city-form__input street">
+                                        <input class="inp" type="text" name="street" placeholder=" ">
+                                        <span>Улица:</span>
+                                    </label>
+                                    <label class="baloon-select-city-form__input building">
+                                        <input class="inp" type="text" name="building" placeholder=" ">
+                                        <span>Дом:</span>
+                                    </label>
+                                    <label class="baloon-select-city-form__input apartment">
+                                        <input class="inp" type="text" name="apt" placeholder=" ">
+                                        <span>Кв:</span>
+                                    </label>
+                                </div>
+                                <div class="baloon-select-city-row mod-comment">
+                                    <label class="baloon-select-city-form__input">
+                                        <input class="inp" type="text" name="comment" placeholder=" ">
+                                        <span>Примечание (корпус, секция, подъезд):</span>
+                                    </label>
+                                </div>
+                                <div class="baloon-select-city-row mod-buttons">
+                                    <button class="baloon-select-city-form__button submit">Применить</button>
+                                    <button class="baloon-select-city-form__button js-baloon-close">Отложить</button>
+                                </div>
+                            </form>
+                        </div>
+                        <a class="header-top-vk" target="_blank" href="http://vk.com/petromost">Мы Вконтакте</a>
+                        <a href="/" class="header-top-auth">Личный кабинет</a>
+                        
+                    </div>
+                    <div class="selectSite">
+                        <span class="destop">
+                        </span>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="header-body">
+                <div class="container">
+                    <div class="header-body-content">
+                        <div class="header-logo">
+                        <a href="/">
+                            <img src="assets/img/logo.png" alt="logo">
+
+                        </a>
+                        </div>
+                        <nav class="header-menu">
+                            <ul class="header-menu-list">
+                                <li class="header-menu-list__item">
+                                    <a href="">Каталог</a>
+                                </li>
+                                <li class="header-menu-list__item">
+                                    <a href="">Доставка и оплата</a>
+                                </li>
+                                <li class="header-menu-list__item">
+                                    <a href="">Помощь</a>
+                                </li>
+                                <li class="header-menu-list__item">
+                                    <a href="">Отзывы</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header-row">
+                            <div class="header-phone">
+                                <p class="header__text">Номер для заказа</p>
+                                <a class="header-phone__number" href="tel:200318">
+                                    <img src="assets/img/phone.png" alt="phone">
+                                    <span>20-03-18</span>
+                                </a>
+                            </div>
+                            
+                            <div class="header-date">
+                                <p class="header__text">Дата доставки</p>
+                                <div class="header-date__number">
+                                    <img src="assets/img/calendar.png" alt="date">
+                                    <span>20.05.2020</span>
+                                </div>
+                            </div>
+                            <form class="header-search">
+                                <p class="header__text">Поиск по каталогу</p>
+                                <div class="header-search__input">
+                                    <input class="search-input" type="text" placeholder="Введите запрос">
+                                    <button type="submit" class="header-search__button"></button>
+                                </div>
+                            </form>
+                            <a href="/" class="header-cart">
+                                <div class="header-cart-wrapper">
+                                    <img src="assets/img/basket.png" alt="basket">
+                                    <span>25 тов., 2 578 руб.</span>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom-partial-1">
+                
+            </div>
+            <div class="header-bottom-partial-2">
+                
+            </div>
+        </header>
+        <div class="cart-mini js-cart-mini">
+            <div class="cart-mini-left">
+                <img src="assets/img/basket-white.png" alt="basket">
+                <span class="cart-mini__counter">25</span>
+            </div>
+            <div class="cart-mini-row">
+                <span class="cart-mini__name">Корзина</span>
+                <span class="cart-mini__price">25 тов., 15 000руб.</span>
+            </div>
+            <div class="cart-mini-row">
+                <div class="cart-mini-item">
+                    <div class="cart-mini-item__name">
+                        Пирог ягодный “Петровские пироги”
+                    </div>
+                    
+                    <div class="cart-mini-item__buttons">
+                        <span class="cart-mini-item__btn js-minus">-</span>
+                        <input class="cart-mini-item__counter js-input" type="tel" value="1" data-max="24" readonly>
+                        <span class="cart-mini-item__btn js-plus">+</span>
+                    </div>
+                    <div class="cart-mini-item__price">
+                        10 500 руб.
+                    </div>
+                </div>
+            </div>
+            <div class="cart-mini-row">
+                <div class="cart-mini-item">
+                    <div class="cart-mini-item__name">
+                        Пирог ягодный “Петровские пироги”
+                    </div>
+                    
+                    <div class="cart-mini-item__buttons">
+                        <span class="cart-mini-item__btn js-minus">-</span>
+                        <input class="cart-mini-item__counter js-input" type="tel" value="1" data-max="24" readonly>
+                        <span class="cart-mini-item__btn js-plus">+</span>
+                    </div>
+                    <div class="cart-mini-item__price">
+                        10 500 руб.
+                    </div>
+                </div>
+            </div>
+            <div class="cart-mini-row">
+                <div class="cart-mini-item">
+                    <div class="cart-mini-item__name">
+                        Пирог ягодный “Петровские пироги”
+                    </div>
+                    
+                    <div class="cart-mini-item__buttons">
+                        <span class="cart-mini-item__btn js-minus">-</span>
+                        <input class="cart-mini-item__counter js-input" type="tel" value="1" data-max="24" readonly>
+                        <span class="cart-mini-item__btn js-plus">+</span>
+                    </div>
+                    <div class="cart-mini-item__price">
+                        10 500 руб.
+                    </div>
+                </div>
+            </div>
+            <div class="cart-mini__all">
+                ИТОГО: 2 340 руб.
+            </div>
+            <div class="cart-mini-bottom">
+                <a class="cart-mini__btn js-cart-mini-close" href="/">
+                    Продолжить покупки
+                </a>
+                <a class="cart-mini__btn mod-red" href="/">
+                    Перейти в корзину
+                </a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="breadcrumbs">
+                    <a href="/" title="Главная">Главная</a>
+                    <span> / </span>
+                    <a href="/" title="Сладкие пироги">Сладкие пироги</a>
+                    <span> / </span>
+                    <a href="/" class="mod-last" title="Пирог ягодный Лесная Поляна">Пирог ягодный “Лесная Поляна”</a>
+                </div>
+            </div>
+            <div class="container">
+                <aside class="aside">
+                    <ul class="aside-menu">
+                        <li class="aside-menu__item">
+                            <a href="/">
+                                <img src="assets/img/honey.svg" alt="honey">
+                                <span>Сладкие пироги</span>
+                            </a>
+                        </li>
+                        <li class="aside-menu__item">
+                            <a href="/">
+                                <img src="assets/img/pie.svg" alt="honey">
+                                <span>Сытные пироги</span>
+                            </a>
+                        </li>
+                        <li class="aside-menu__item">
+                            <a href="/">
+                                <img src="assets/img/pie-2.svg" alt="honey">
+                                <span>Постные пироги</span>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+                <main class="main">
+                    <div class="item">
+                        <div class="item-row">
+                            <div class="item__img">
+                                <img src="assets/img/item.jpg" alt="пирог">
+                            </div>
+                            <div class="item-info">
+                                <div class="item__name">
+                                    Лесная поляна
+                                </div>
+                                <div class="item__desc">
+                                    <span class="mod-dark">Состав:</span> мука, сахар, яйцо куриное, пшеничная мука, яблоко, разрыхлитель
+                                </div>
+                                <div class="item__weight">
+                                    <span class="mod-dark">Вес:</span> 1кг.
+                                </div>
+                                <div class="item__line"></div>
+                                <div class="item__price">
+                                    1 250 руб. / шт.
+                                </div>
+                                <div class="item-row">
+                                    <div class="item__buttons">
+                                        <span class="item__btn js-minus">-</span>
+                                        <input class="item__counter js-input" type="tel" value="1" data-max="24" readonly="">
+                                        <span class="item__btn js-plus">+</span>
+                                    </div>
+                                    <div class="item-add">
+                                        <a class="item-add__btn" href="/">Добавить в корзину</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                        </div>
+                        <a class="item__back" href="/"><< назад к каталогу</a>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="footer-top-content">
+                        <div class="footer__logo">
+                            <a href="/">
+                                <img class="footer-top__logo" src="assets/img/footer-logo.png" alt="logo">
+                            </a>
+                        </div>
+                        <ul class="footer-menu">
+                            <li class="footer-menu__item">
+                                <a href="/">Новости</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="/">Контакты</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="/">Реквизиты</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="/">Аренда</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="/">Доставка и оплата</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="/">Книга отзывов и предложений</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-border-partial-1">
+                    
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-border-partial-2">
+                    
+                </div>
+                <div class="container">
+                    <div class="footer-bottom-content">
+                        <div class="footer-bottom__copy">© «Петровский-online», 2020</div>
+                        <a class="footer-bottom__person" href="/">Положение о защите персональных данных</a>
+                        <div class="footer-bottom__company">Поддержка сайта – <a href="https://leeft.ru/">LEEFT</a></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="scripts/vendor/jquery-1.8.3.min.js"></script>
+    <script src="scripts/bundle.js"></script>
+</body>
+</html>
