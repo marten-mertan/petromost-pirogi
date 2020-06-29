@@ -57,6 +57,7 @@ html, body{
             padding: 17px 0;
         }
         &-logo{
+            font-family: "Roboto";
             font-size: 15px;
             line-height: 18px;
             font-weight: bold;
@@ -70,6 +71,7 @@ html, body{
             }
         }
         &-address{
+            font-family: "Roboto";
             font-size: 15px;
             color: #484848;
             margin-right: 70px;
@@ -77,6 +79,7 @@ html, body{
         &-vk{
             position: relative;
             display: block;
+            font-family: "Roboto";
             font-size: 15px;
             color: #5181b8;
             border-bottom: 1px solid #5181b8;
@@ -94,6 +97,7 @@ html, body{
         &-auth{
             positioN: relative;
             display: block;
+            font-family: "Roboto";
             font-size: 15px;
             color: #494949;
             margin-left: auto;
@@ -174,6 +178,7 @@ html, body{
             &__item{
                 padding: 10px 12px;
                 a{
+                    font-family: "Roboto";
                     font-size: 18px;
                     line-height: 1;
                     color: #fff;
@@ -261,6 +266,7 @@ html, body{
         border-radius: 6px;
         background-color: #ffde94;
         padding: 2px;
+        font-family: "Roboto";
         font-size: 14px;
         line-height: 18px;
         color: #000;
@@ -302,6 +308,7 @@ html, body{
                 margin-right: 13px;
             }
             a{
+                font-family: "Roboto";
                 font-size: 17px;
                 color: #525a5f;
                 font-weight: 300;
@@ -375,6 +382,7 @@ html, body{
             justify-content: space-between;
             width: 100%;
             padding: 8px 0px;
+            font-family: "Roboto";
             font-size: 14px;
             color: #4c3a2f;
         }
@@ -407,6 +415,7 @@ html, body{
 
             }
             a{
+                font-family: "Roboto";
                 font-size: 15px;
                 color: #4c3a2f;
                 text-transform: uppercase;
@@ -464,6 +473,7 @@ html, body{
         &__text{
             display: block;
             flex: 0 0 auto;
+            font-family: "Roboto";
             font-size: 24px;
             line-height: 1;
             color: #a92925;
@@ -518,6 +528,7 @@ html, body{
             }
         }
         &__name{
+            font-family: "Roboto";
             font-size: 17px;
             line-height: 21px;
             color: #4c3a2f;
@@ -575,6 +586,7 @@ html, body{
             align-items: center;
             width: 33px;
             height: 33px;
+            font-family: "Roboto";
             font-size: 18px;
             line-height: 21px;
             border-radius: 50%;
@@ -608,6 +620,7 @@ html, body{
 
 .baloon-select-city{
     display: none;
+    font-family: "Roboto";
     font-size: 13px;
     color: black;
     background-color: white;
@@ -937,6 +950,7 @@ html, body{
 }
 
 .breadcrumbs{
+    font-family: "Roboto";
     font-size: 14px;
     line-height: 22px;
     color: #525a5f;
@@ -995,6 +1009,7 @@ html, body{
 
     }
     &__desc{
+        font-family: "Roboto";
         font-size: 17px;
         line-height: 22px;
         color: #7c6e65;
@@ -1006,6 +1021,7 @@ html, body{
 
     }
     &__weight{
+        font-family: "Roboto";
         font-size: 16px;
         line-height: 22px;
         color: #7c6e65;
@@ -1040,6 +1056,7 @@ html, body{
         align-items: center;
         width: 33px;
         height: 33px;
+        font-family: "Roboto";
         font-size: 18px;
         line-height: 21px;
         border-radius: 50%;
@@ -1077,6 +1094,7 @@ html, body{
             display: flex;
             padding: 10px 19px 9px;
             background-color: #a92925;
+            font-family: "Roboto";
             font-size: 14px;
             line-height: 1;
             color: #fffefe;
