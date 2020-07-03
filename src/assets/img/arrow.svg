@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="11.82" height="8.343" viewBox="0 0 11.82 8.343">
+  <defs>
+    <style>
+      .icon-arrow {
+        fill: none;
+        stroke: #a92925;
+        stroke-width: 2px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path class="icon-arrow" d="M1541.83,929.984l4.91-4.91,4.91,4.91" transform="translate(-1540.84 -924.063)"/>
+</svg>
