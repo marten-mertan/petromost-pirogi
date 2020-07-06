@@ -94,7 +94,24 @@ window.onload = function() {
         slidesToShow: 1,
         arrows: false,
         dots: true,
-        adaptiveHeight: true
+        infinite: false,
+        adaptiveHeight: true,
+        responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 640,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              }
+            }
+          ]
     });
 
     $(document).on('click','.js-select-city', function(e){

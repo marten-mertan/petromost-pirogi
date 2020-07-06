@@ -394,11 +394,20 @@ html, body{
             .header-search__input{
                 @media screen and (max-width: 1024px){
                     display: block;
+                    z-index: 180;
+                    padding-bottom: 8px;
+                    border-bottom: 1px solid #e3e3e3;
+
                 }
 
             }
+            .search-result{
+                display: block;
+            }
             @media screen and (max-width: 1024px){
                 max-width: 100%;
+                margin-right: 0;
+                padding-bottom: 0;
             }
         }
         &__input{
@@ -447,6 +456,7 @@ html, body{
         }
         &.mini{
             @media screen and (max-width: 1024px){
+                display: none;
                 span{
                     display: none;
                 }
@@ -769,14 +779,20 @@ html, body{
     margin-bottom: 12px;
     @media screen and (max-width: 1024px){
         display: none;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 20px 12px;
+    }
+    @media screen and (max-width: 640px){
+        display: none;
         flex-direction: column;
         margin: 0 20px 12px;
     }
     &-popular-slider{
         display: none;
         &-item{
-            
             padding: 0 20px;
+
         }
     }
     &-wrapper{
@@ -808,6 +824,12 @@ html, body{
                 display: none;
                 @media screen and (max-width: 1024px){
                     display: block;
+                }
+                .category-item{
+                    @media screen and (max-width: 1024px){
+                        width: 100%;
+                        margin: 0 0 23px;
+                    }
                 }
             }
         }
@@ -874,8 +896,18 @@ html, body{
         flex-direction: column;
         margin-bottom: 30px;
         @media screen and (max-width: 1024px){
-            width: 100%;
+            width: calc(50% - 20px);
             margin-bottom: 23px;
+            &:nth-child(2n){
+                margin-left: 40px;
+            }
+        }
+        @media screen and (max-width: 640px){
+            width: 100%;
+            margin: 0 0 23px;
+            &:nth-child(2n){
+                margin-left: 0;
+            }
         }
         &-link{
             text-decoration: none;
@@ -1262,7 +1294,7 @@ html, body{
             padding: 0;
             width: 0;
             height: 0;
-            z-index: 120;
+            z-index: 180;
         }
     }
     &.open{
@@ -1436,12 +1468,15 @@ html, body{
 .item{
     margin-top: 8px;
     @media screen and (max-width: 1024px){
+        margin: 0 20px 26px;
+    }
+    @media screen and (max-width: 860px){
         margin: 0 0 26px;
     }
     &-row{
         display: flex;
         flex-direction: row;
-        @media screen and (max-width: 1024px){
+        @media screen and (max-width: 860px){
             flex-direction: column;
         }
     }
@@ -1455,7 +1490,7 @@ html, body{
         overflow: hidden;
         margin-right: 30px;
         margin-bottom: 30px;
-        @media screen and (max-width: 1024px){
+        @media screen and (max-width: 860px){
             width: 100%;
             margin: 0 0 12px;
         }
@@ -1473,12 +1508,12 @@ html, body{
     }
     &-info{
         margin-bottom: 30px;
-        @media screen and (max-width: 1024px){
+        @media screen and (max-width: 860px){
             padding: 0 20px;
             margin-bottom: 16px;
         }
         .item-row{
-            @media screen and (max-width: 1024px){
+            @media screen and (max-width: 860px){
                 margin-top: -42px;
             }
         }
@@ -1491,7 +1526,7 @@ html, body{
         color: #ebaf29;
         text-transform: uppercase;
         margin-bottom: 18px;
-        @media screen and (max-width: 1024px){
+        @media screen and (max-width: 860px){
             margin-bottom: 6px;
         }
 
@@ -1503,7 +1538,7 @@ html, body{
         color: #7c6e65;
         margin-bottom: 20px;
         font-weight: 300;
-        @media screen and (max-width: 1024px){
+        @media screen and (max-width: 860px){
             margin-bottom: 6px;
         }
         .mod-dark{
@@ -1518,7 +1553,7 @@ html, body{
         color: #7c6e65;
         margin-bottom: 20px;
         font-weight: 300;
-        @media screen and (max-width: 1024px){
+        @media screen and (max-width: 860px){
             margin-bottom: 12px;
         }
         .mod-dark{
@@ -1530,7 +1565,7 @@ html, body{
         height: 1px;
         background-color: #dcdcdc;
         margin-bottom: 16px;
-        @media screen and (max-width: 1024px){
+        @media screen and (max-width: 860px){
             margin-bottom: 20px;
         }
     }
@@ -1546,7 +1581,7 @@ html, body{
         display: flex;
         flex-direction: row;
         align-items: center;
-        @media screen and (max-width: 1024px){
+        @media screen and (max-width: 860px){
             justify-content: flex-end;
             margin-bottom: 18px;
         }
@@ -1567,7 +1602,7 @@ html, body{
         box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
         transition: all .3s ease;;
         cursor: pointer;
-        @media screen and (max-width: 1024px){
+        @media screen and (max-width: 860px){
             width: 29px;
             height: 29px;
         }
@@ -1591,14 +1626,14 @@ html, body{
         -webkit-text-size-adjust: none;
         -webkit-font-smoothing: antialiased;
         -webkit-tap-highlight-color: transparent;
-        @media screen and (max-width: 1024px){
+        @media screen and (max-width: 860px){
             width: 50px;
         }
     }
     &-add{
         position: relative;
         margin-left: 32px;
-        @media screen and (max-width: 1024px){
+        @media screen and (max-width: 860px){
             margin: 0;
         }
         &__btn{
@@ -1612,7 +1647,7 @@ html, body{
             color: #fffefe;
             text-decoration: none;
             border-radius: 18px;
-            @media screen and (max-width: 1024px){
+            @media screen and (max-width: 860px){
                 justify-content: center;
                 text-align: center;
             }
@@ -1635,7 +1670,7 @@ html, body{
         line-height: 25px;
         color: #7c6e65;
         font-weight: 300;
-        @media screen and (max-width: 1024px){
+        @media screen and (max-width: 860px){
             padding: 0 20px;
         }
     }
@@ -1648,7 +1683,7 @@ html, body{
         border-bottom: 1px solid transparent;
         margin-top: 28px;
         transition: all .2s ease;
-        @media screen and (max-width: 1024px){
+        @media screen and (max-width: 860px){
             padding: 0 20px;
         }
         &:hover{
@@ -1841,4 +1876,99 @@ html, body{
     top: 18px;
     right: 20px;
     background: url(../assets/img/popup-close.svg) no-repeat right;
+}
+
+.search-result{
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    width: 520px;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.25);
+    padding: 12px 0 20px;
+    z-index: 120;
+    @media screen and (max-width: 1024px){
+        width: 100vw;
+        left: -20px;
+        padding-top: 36px;
+        top: 0;
+    }
+    &-item{
+        display: flex;
+        flex-direction: row;
+        padding: 12px 0 15px;
+        margin: 0 20px;
+        cursor: pointer;
+        border-bottom: 1px solid #e3e3e3;
+        &:first-child{
+            @media screen and (max-width: 1024px){
+                margin-top: 12px;
+            }
+        }
+        &__img{
+            background: none 50% 50% no-repeat;
+            background-color: white;
+            background-size: contain;
+            width: 68px;
+            margin-right: 20px;
+        }
+        &-info{
+            &__name{
+                font-family: "Roboto";
+                font-size: 15px;
+                line-height: 17px;
+                color: #4c3a2f;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-weight: bold;
+                width: 100%;
+                margin-bottom: 13px;
+                a{
+
+                    font-family: "Roboto";
+                    font-size: 15px;
+                    line-height: 17px;
+                    color: #4c3a2f;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+            }
+            &__price{
+                font-family: "Roboto";
+                font-size: 16px;
+                line-height: 1;
+                font-weight: 900;
+                color: #a92925;
+                margin-bottom: 9px;
+                width: 100%;
+                margin-top: auto;
+                a{
+                    font-family: "Roboto";
+                    font-size: 16px;
+                    line-height: 1;
+                    font-weight: 900;
+                    color: #a92925;
+                    text-decoration: none;
+
+                }
+            }
+        }
+    }
+    &__button{
+        display: flex;
+        margin: 20px auto 0;
+        font-size: 13px;
+        line-height: 1;
+        border: none;
+        cursor: pointer;
+        overflow: hidden;
+        outline: none;
+        padding: 13px 19px;
+        background-color: #ececec;
+        border-radius: 20px;
+        color: black;
+    }
 }
