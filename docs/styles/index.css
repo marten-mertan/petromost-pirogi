@@ -960,10 +960,11 @@ html, body {
           line-height: 15px;
           margin-bottom: 10px; } }
     .category-item__desc {
-      font-family: "Roboto Light";
+      font-family: "Roboto";
       width: 100%;
       font-size: 14px;
       line-height: 16px;
+      font-weight: 300;
       text-align: center;
       margin-bottom: 9px; }
       @media screen and (max-width: 1024px) {
@@ -990,11 +991,12 @@ html, body {
           text-align: right;
           margin-bottom: 4px; } }
     .category-item__all {
-      font-family: "Roboto Light";
+      font-family: "Roboto";
       font-size: 13px;
       line-height: 16px;
       color: #4c3a2f;
       text-align: center;
+      font-weight: 300;
       width: 100%; }
       @media screen and (max-width: 1024px) {
         .category-item__all {
