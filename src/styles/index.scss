@@ -5,6 +5,9 @@ html, body{
     height: 100%;
 }
 
+.cart-mini ::-webkit-scrollbar {
+    width: 0; }
+
 .site{
     display: flex;
     flex-direction: column;
@@ -1274,7 +1277,7 @@ html, body{
 
 .cart-mini{
     position: fixed;
-    right: -580px;
+    right: -605px;
     top: 30%;
     padding: 7px 20px 32px;
     background-color: #fff;
@@ -1283,6 +1286,18 @@ html, body{
     z-index: 120;
     @media screen and (max-width: 1024px){
         display: none;
+    }
+    &-head{
+        padding: 15px 0 14px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    &-wrapper{
+        position: relative;
+    }
+    &-container{
+
     }
     &-mobile{
         display: none;
@@ -1329,6 +1344,10 @@ html, body{
         display: flex;
         flex-direction: row;
         align-items: center;
+        &:first-child{
+            border-top: 1px dotted #000;
+
+        }
     }
     &__name{
         font-size: 18px;
@@ -1971,4 +1990,30 @@ html, body{
         border-radius: 20px;
         color: black;
     }
+}
+
+.baron__scroller {
+    padding-right: 20px;
+    max-height: 220px;
+    position: relative;
+}
+
+.baron__track {
+    height: 100%;
+    width: 6px;
+    background: #f7f7f7;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.baron__bar {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    right: 1px;
+    z-index: 1;
+    width: 4px;
+    background: #a0b2bd;
 }

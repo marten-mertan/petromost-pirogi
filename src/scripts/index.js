@@ -123,4 +123,12 @@ window.onload = function() {
     });
 
     
+    if ($('.js-custom-scroll').length){
+        window.dima = baron({
+            root: '.js-custom-scroll',
+            scroller: '.baron__scroller',
+            bar: '.baron__bar'
+        }).autoUpdate(); 
+    }
+    
 };
