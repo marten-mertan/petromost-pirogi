@@ -1218,6 +1218,7 @@ html, body {
 .cart-mini {
   position: fixed;
   right: -605px;
+  width: 598px;
   top: 30%;
   padding: 7px 20px 32px;
   background-color: #fff;
