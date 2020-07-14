@@ -9,6 +9,7 @@
     
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="styles/vendor/slick/slick.css">
+    <link rel="stylesheet" href="styles_old/index_main.css">
 
     <link rel="stylesheet" href="styles/index.css">
 </head>
@@ -22,11 +23,11 @@
                         <span class="header-top-address">
                             Ваш адрес:
                             <a href="#" class="js-select-city">
-                                <span class="baloon-select-city-tail js-select-city-baloon"></span>
+                                <span class="baloon-select-city-tail js-select-city-baloon active"></span>
                                 Введите адрес
                             </a>
                         </span>
-                        <div class="baloon-select-city js-select-city-baloon">
+                        <div class="baloon-select-city js-select-city-baloon active">
                             <p class="baloon-select-city-top">ВНИМАНИЕ. Для того, чтобы выбрать доступные для заказа товары, введите адрес доставки</p>
                             <form class="baloon-select-city-form" action="">
                                 <p>Выберите город:</p>
@@ -49,10 +50,18 @@
                                         <span>Кв:</span>
                                     </label>
                                 </div>
-                                <div class="baloon-select-city-row mod-comment">
+                                <div class="baloon-select-city-row mod-address">
                                     <label class="baloon-select-city-form__input">
-                                        <input class="inp" type="text" name="comment" placeholder=" ">
-                                        <span>Примечание (корпус, секция, подъезд):</span>
+                                        <input class="inp" type="text" name="korpus" placeholder=" " id="korpus">
+                                        <span>Корпус:</span>
+                                    </label>
+                                    <label class="baloon-select-city-form__input">
+                                        <input class="inp" type="text" name="porch" placeholder=" " id="porch">
+                                        <span>Подъезд:</span>
+                                    </label>
+                                    <label class="baloon-select-city-form__input">
+                                        <input class="inp" type="text" name="floor" placeholder=" " id="floor">
+                                        <span>Этаж:</span>
                                     </label>
                                 </div>
                                 <div class="baloon-select-city-row mod-buttons">

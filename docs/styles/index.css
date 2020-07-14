@@ -1080,7 +1080,6 @@ html, body {
   .baloon-select-city-row {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     margin-bottom: 10px; }
     .baloon-select-city-row.mod-address {
       margin-bottom: 10px; }
