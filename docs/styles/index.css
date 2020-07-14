@@ -1183,11 +1183,11 @@ html, body {
               user-select: none;
       transition: all 0.2s; }
     .baloon-select-city-form__input.street {
-      width: 214px; }
+      width: 60%; }
     .baloon-select-city-form__input.building {
-      width: 57px; }
+      width: 20%; }
     .baloon-select-city-form__input.apartment {
-      width: 57px; }
+      width: 20%; }
   .baloon-select-city-form__button {
     font-size: 13px;
     line-height: 1;
