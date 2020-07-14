@@ -249,7 +249,7 @@ html, body {
       font-family: "Roboto";
       font-size: 15px;
       color: #494949;
-      margin-left: auto;
+      margin: 0 8px 0 auto;
       border-bottom: 1px solid #494949; }
       @media screen and (max-width: 1024px) {
         .header-top-auth {
@@ -272,9 +272,45 @@ html, body {
             left: 0;
             right: 0;
             bottom: 0; } }
+      .header-top-auth-reg {
+        positioN: relative;
+        display: block;
+        font-family: "Roboto";
+        font-size: 15px;
+        color: #494949;
+        border-bottom: 1px solid #494949;
+        margin: 0 0 0 8px; }
+        @media screen and (max-width: 1024px) {
+          .header-top-auth-reg {
+            margin: 0; } }
       @media screen and (max-width: 1024px) {
         .header-top-auth__text {
           display: none; } }
+      .header-top-auth-exit {
+        position: relative;
+        display: block;
+        font-family: "Roboto";
+        font-size: 15px;
+        color: #494949;
+        border-bottom: 1px solid #494949;
+        margin: 0 21px 0 8px; }
+        @media screen and (max-width: 1024px) {
+          .header-top-auth-exit {
+            width: 0;
+            height: 21px;
+            margin-left: 10px; } }
+        .header-top-auth-exit:after {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 21px;
+          height: 20px;
+          background: url(../assets/img/exit.png) no-repeat right;
+          right: -20px;
+          top: 0; }
+    @media screen and (max-width: 1024px) {
+      .header-top-divider {
+        display: none; } }
   .header-body {
     padding: 49px 0 32px; }
     @media screen and (max-width: 1024px) {
@@ -1069,7 +1105,8 @@ html, body {
   width: 440px; }
   @media screen and (max-width: 1024px) {
     .baloon-select-city {
-      display: none; } }
+      width: 100%;
+      max-width: 440px; } }
   .baloon-select-city p {
     margin-bottom: 12px; }
   .baloon-select-city.active {

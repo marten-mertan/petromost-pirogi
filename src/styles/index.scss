@@ -137,7 +137,7 @@ html, body{
             font-family: "Roboto";
             font-size: 15px;
             color: #494949;
-            margin-left: auto;
+            margin: 0 8px 0 auto;
             border-bottom: 1px solid #494949;
             @media screen and (max-width: 1024px){
                 margin-left: 27px;
@@ -161,11 +161,55 @@ html, body{
                     bottom: 0;
                 }
             }
+            &-reg{
+                positioN: relative;
+                display: block;
+                font-family: "Roboto";
+                font-size: 15px;
+                color: #494949;
+                border-bottom: 1px solid #494949;
+                margin: 0 0 0 8px;
+                @media screen and (max-width: 1024px){
+                    margin: 0;
+                }
+            }
             &__text{
                 @media screen and (max-width: 1024px){
                     display: none;
                 }
                 
+            }
+            &-exit{
+                position: relative;
+                display: block;
+                font-family: "Roboto";
+                font-size: 15px;
+                color: #494949;
+                border-bottom: 1px solid #494949;
+                margin: 0 21px 0 8px;
+                @media screen and (max-width: 1024px){
+                    width: 0;
+                    height: 21px;
+                    margin-left: 10px;
+                }
+
+                &:after{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 21px;
+                    height: 20px;
+                    background: url(../assets/img/exit.png) no-repeat right;
+                    right: -20px;
+                    top: 0;
+                }
+
+            }
+
+        }
+        &-divider{
+            @media screen and (max-width: 1024px){
+                display: none;
             }
         }
     }
@@ -1111,7 +1155,8 @@ html, body{
     border-radius: 20px;
     width: 440px;
     @media screen and (max-width: 1024px){
-        display: none;
+        width: 100%;
+        max-width: 440px;
     }
     p{
         margin-bottom: 12px;
