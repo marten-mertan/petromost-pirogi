@@ -20,47 +20,55 @@
                 <div class="container">
                     <div class="header-top-content">
                         <a class="header-top-logo" href="/"><span class="mod-red">Online</span> <span class="mod-green">Петромост</span></a>
-                        <span class="header-top-address">
+                        <div class="header-top-address">
                             Ваш адрес:
                             <a href="#" class="js-select-city">
-                                <span class="baloon-select-city-tail js-select-city-baloon"></span>
-                                Введите адрес
+                                <span class="baloon-select-city-tail js-select-city-baloon active"></span>
+                                <span class="header-top-address__text">Улица Гагарина, дом 14, строение 44, квартира 3</span>
                             </a>
-                        </span>
-                        <div class="baloon-select-city js-select-city-baloon">
-                            <p class="baloon-select-city-top">ВНИМАНИЕ. Для того, чтобы выбрать доступные для заказа товары, введите адрес доставки</p>
-                            <form class="baloon-select-city-form" action="">
-                                <p>Выберите город:</p>
-                                <div class="baloon-select-city-row">
-                                    <a class="baloon-select-city-form__city js-select-city-link active" href="#">Архангельск</a>
-                                    <a class="baloon-select-city-form__city js-select-city-link" href="#">Северодвинск</a>
-                                </div>
-                                <p>Введите ваш адрес:</p>
-                                <div class="baloon-select-city-row mod-address">
-                                    <label class="baloon-select-city-form__input street">
-                                        <input class="inp" type="text" name="street" placeholder=" ">
-                                        <span>Улица:</span>
-                                    </label>
-                                    <label class="baloon-select-city-form__input building">
-                                        <input class="inp" type="text" name="building" placeholder=" ">
-                                        <span>Дом:</span>
-                                    </label>
-                                    <label class="baloon-select-city-form__input apartment">
-                                        <input class="inp" type="text" name="apt" placeholder=" ">
-                                        <span>Кв:</span>
-                                    </label>
-                                </div>
-                                <div class="baloon-select-city-row mod-comment">
-                                    <label class="baloon-select-city-form__input">
-                                        <input class="inp" type="text" name="comment" placeholder=" ">
-                                        <span>Примечание (корпус, секция, подъезд):</span>
-                                    </label>
-                                </div>
-                                <div class="baloon-select-city-row mod-buttons">
-                                    <button class="baloon-select-city-form__button submit">Применить</button>
-                                    <button class="baloon-select-city-form__button js-baloon-close">Отложить</button>
-                                </div>
-                            </form>
+                            <div class="baloon-select-city js-select-city-baloon active">
+                                <p class="baloon-select-city-top">ВНИМАНИЕ. Для того, чтобы выбрать доступные для заказа товары, введите адрес доставки</p>
+                                <form class="baloon-select-city-form" action="">
+                                    <p>Выберите город:</p>
+                                    <div class="baloon-select-city-row">
+                                        <a class="baloon-select-city-form__city js-select-city-link active" href="#">Архангельск</a>
+                                        <a class="baloon-select-city-form__city js-select-city-link" href="#">Северодвинск</a>
+                                    </div>
+                                    <p>Введите ваш адрес:</p>
+                                    <div class="baloon-select-city-row mod-address">
+                                        <label class="baloon-select-city-form__input street">
+                                            <input class="inp" type="text" name="street" placeholder=" ">
+                                            <span>Улица:</span>
+                                        </label>
+                                        <label class="baloon-select-city-form__input building">
+                                            <input class="inp" type="text" name="building" placeholder=" ">
+                                            <span>Дом:</span>
+                                        </label>
+                                        <label class="baloon-select-city-form__input apartment">
+                                            <input class="inp" type="text" name="apt" placeholder=" ">
+                                            <span>Кв:</span>
+                                        </label>
+                                    </div>
+                                    <div class="baloon-select-city-row mod-address">
+                                        <label class="baloon-select-city-form__input">
+                                            <input class="inp" type="text" name="korpus" placeholder=" " id="korpus">
+                                            <span>Корпус:</span>
+                                        </label>
+                                        <label class="baloon-select-city-form__input">
+                                            <input class="inp" type="text" name="porch" placeholder=" " id="porch">
+                                            <span>Подъезд:</span>
+                                        </label>
+                                        <label class="baloon-select-city-form__input">
+                                            <input class="inp" type="text" name="floor" placeholder=" " id="floor">
+                                            <span>Этаж:</span>
+                                        </label>
+                                    </div>
+                                    <div class="baloon-select-city-row mod-buttons">
+                                        <button class="baloon-select-city-form__button submit">Применить</button>
+                                        <button class="baloon-select-city-form__button js-baloon-close">Отложить</button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                         <a class="header-top-vk" target="_blank" href="http://vk.com/petromost">
                             <span class="header-top-vk__text">Мы Вконтакте</span>
