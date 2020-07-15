@@ -220,6 +220,49 @@ window.onload = function() {
             bar: '.baron__bar'
         }).autoUpdate(); 
     }
+
+    function cartScroll() {
+        if (asideWrapper == null) {
+            asideWrapper = document.createElement('div');
+            asideWrapper.style.cssText = 'box-sizing: border-box; width: ' + asideCart.offsetWidth + 'px;';
+            asideCart.insertBefore(asideWrapper, asideCart.firstChild);
+            var l = asideCart.childNodes.length;
+            for (var i = 1; i < l; i++) {
+                asideWrapper.appendChild(asideCart.childNodes[1]);
+            }
+            asideCart.style.height = asideWrapper.getBoundingClientRect().height + 'px';
+        }
+        var Ra = asideCart.getBoundingClientRect(),
+            R = Math.round(Ra.top + asideWrapper.getBoundingClientRect().height - document.querySelector('.main').getBoundingClientRect().bottom);
+        if ((Ra.top - P) <= 0 && window.innerWidth>1024) {
+            if ((Ra.top - P) <= R) {
+                asideWrapper.className = 'stop';
+                asideWrapper.style.top = - R +'px';
+            } else {
+                asideWrapper.className = 'sticky';
+                asideWrapper.style.top = P + 'px';
+            }
+        } else {
+            asideWrapper.className = '';
+            asideWrapper.style.top = '';
+        }
+        window.addEventListener('resize', function() {
+            asideCart.children[0].style.width = getComputedStyle(asideCart, '').width;
+            if (window.innerWidth<=1024){
+                asideWrapper.className = '';
+                asideWrapper.style.top = '';
+                asideCart.style.height = 'auto';
+            }
+        }, false);
+    }
+
+    if ($('.js-aside').length){
+        var asideCart = document.querySelector('.js-aside'), 
+            asideWrapper = null, 
+            P = 0;
+        window.addEventListener('scroll', cartScroll, false);
+        document.body.addEventListener('scroll', cartScroll, false);
+    }
     
 };
 

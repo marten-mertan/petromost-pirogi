@@ -668,7 +668,10 @@ html, body {
 
 .footer {
   position: relative;
-  flex: 0 0 auto; }
+  flex: 0 0 auto;
+  background: none;
+  border: none;
+  padding: 0; }
   .footer-top {
     position: relative;
     background-size: cover;
