@@ -50,6 +50,7 @@ html, body{
             position: relative;
             border-bottom: 1px solid #484848;
             color: #484848;
+            margin-left: 6px;
             &:after{
                 content: "";
                 display: block;
@@ -88,12 +89,22 @@ html, body{
             }
         }
         &-address{
+            display: flex;
+            flex-direction: row;
             font-family: "Roboto";
             font-size: 15px;
             color: #484848;
             margin-right: 70px;
+            position: relative;
             @media screen and (max-width: 1024px){
                 display: none;
+            }
+            &__text{
+                display: inline-block;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 200px;
             }
         }
         &-vk{
@@ -1149,7 +1160,7 @@ html, body{
     color: black;
     background-color: white;
     position: absolute;
-    top: 100%;
+    top: calc(100% + 17px);
     left: 0;
     z-index: 1000;
     padding: 20px 20px 30px;
