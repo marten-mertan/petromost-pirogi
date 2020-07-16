@@ -20,47 +20,55 @@
                 <div class="container">
                     <div class="header-top-content">
                         <a class="header-top-logo" href="/"><span class="mod-red">Online</span> <span class="mod-green">Петромост</span></a>
-                        <span class="header-top-address">
+                        <div class="header-top-address">
                             Ваш адрес:
                             <a href="#" class="js-select-city">
-                                <span class="baloon-select-city-tail js-select-city-baloon"></span>
-                                Введите адрес
+                                <span class="baloon-select-city-tail js-select-city-baloon active"></span>
+                                <span class="header-top-address__text">Улица Гагарина, дом 14, строение 44, квартира 3</span>
                             </a>
-                        </span>
-                        <div class="baloon-select-city js-select-city-baloon">
-                            <p class="baloon-select-city-top">ВНИМАНИЕ. Для того, чтобы выбрать доступные для заказа товары, введите адрес доставки</p>
-                            <form class="baloon-select-city-form" action="">
-                                <p>Выберите город:</p>
-                                <div class="baloon-select-city-row">
-                                    <a class="baloon-select-city-form__city js-select-city-link active" href="#">Архангельск</a>
-                                    <a class="baloon-select-city-form__city js-select-city-link" href="#">Северодвинск</a>
-                                </div>
-                                <p>Введите ваш адрес:</p>
-                                <div class="baloon-select-city-row mod-address">
-                                    <label class="baloon-select-city-form__input street">
-                                        <input class="inp" type="text" name="street" placeholder=" ">
-                                        <span>Улица:</span>
-                                    </label>
-                                    <label class="baloon-select-city-form__input building">
-                                        <input class="inp" type="text" name="building" placeholder=" ">
-                                        <span>Дом:</span>
-                                    </label>
-                                    <label class="baloon-select-city-form__input apartment">
-                                        <input class="inp" type="text" name="apt" placeholder=" ">
-                                        <span>Кв:</span>
-                                    </label>
-                                </div>
-                                <div class="baloon-select-city-row mod-comment">
-                                    <label class="baloon-select-city-form__input">
-                                        <input class="inp" type="text" name="comment" placeholder=" ">
-                                        <span>Примечание (корпус, секция, подъезд):</span>
-                                    </label>
-                                </div>
-                                <div class="baloon-select-city-row mod-buttons">
-                                    <button class="baloon-select-city-form__button submit">Применить</button>
-                                    <button class="baloon-select-city-form__button js-baloon-close">Отложить</button>
-                                </div>
-                            </form>
+                            <div class="baloon-select-city js-select-city-baloon active">
+                                <p class="baloon-select-city-top">ВНИМАНИЕ. Для того, чтобы выбрать доступные для заказа товары, введите адрес доставки</p>
+                                <form class="baloon-select-city-form" action="">
+                                    <p>Выберите город:</p>
+                                    <div class="baloon-select-city-row">
+                                        <a class="baloon-select-city-form__city js-select-city-link active" href="#">Архангельск</a>
+                                        <a class="baloon-select-city-form__city js-select-city-link" href="#">Северодвинск</a>
+                                    </div>
+                                    <p>Введите ваш адрес:</p>
+                                    <div class="baloon-select-city-row mod-address">
+                                        <label class="baloon-select-city-form__input street">
+                                            <input class="inp" type="text" name="street" placeholder=" ">
+                                            <span>Улица:</span>
+                                        </label>
+                                        <label class="baloon-select-city-form__input building">
+                                            <input class="inp" type="text" name="building" placeholder=" ">
+                                            <span>Дом:</span>
+                                        </label>
+                                        <label class="baloon-select-city-form__input apartment">
+                                            <input class="inp" type="text" name="apt" placeholder=" ">
+                                            <span>Кв:</span>
+                                        </label>
+                                    </div>
+                                    <div class="baloon-select-city-row mod-address">
+                                        <label class="baloon-select-city-form__input">
+                                            <input class="inp" type="text" name="korpus" placeholder=" " id="korpus">
+                                            <span>Корпус:</span>
+                                        </label>
+                                        <label class="baloon-select-city-form__input">
+                                            <input class="inp" type="text" name="porch" placeholder=" " id="porch">
+                                            <span>Подъезд:</span>
+                                        </label>
+                                        <label class="baloon-select-city-form__input">
+                                            <input class="inp" type="text" name="floor" placeholder=" " id="floor">
+                                            <span>Этаж:</span>
+                                        </label>
+                                    </div>
+                                    <div class="baloon-select-city-row mod-buttons">
+                                        <button class="baloon-select-city-form__button submit">Применить</button>
+                                        <button class="baloon-select-city-form__button js-baloon-close">Отложить</button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                         <a class="header-top-vk" target="_blank" href="http://vk.com/petromost">
                             <span class="header-top-vk__text">Мы Вконтакте</span>
@@ -74,6 +82,9 @@
                         </a>
                     </div>
                 </div>
+            </div>
+            <div class="header-top-partial-1">
+                
             </div>
             <div class="header-body">
                 <div class="container">
@@ -200,13 +211,13 @@
                     </div>
                 </div>
             </div>
-            <div class="header-bottom-partial-1">
-                
-            </div>
-            <div class="header-bottom-partial-2">
-                
-            </div>
         </header>
+        <div class="header-bottom-partial-1">
+            
+        </div>
+        <div class="header-bottom-partial-2">
+            
+        </div>
         
         <div class="cart-mini js-cart-mini js-custom-scroll">
             <div class="cart-mini-left">
@@ -251,83 +262,16 @@
         </div>
         <div class="content">
             <div class="container">
-                <div class="breadcrumbs">
-                    <a href="/" title="Главная">Главная</a>
-                    <span> / </span>
-                    <a href="/" title="Сладкие пироги">Сладкие пироги</a>
-                    <span> / </span>
-                    <a href="/" class="mod-last" title="Пирог ягодный Лесная Поляна">Пирог ягодный “Лесная Поляна”</a>
-                </div>
-            </div>
-            <div class="container">
-                <aside class="aside js-aside">
-                    <ul class="aside-menu js-aside-menu">
-                        <li class="aside-menu__item js-aside-item">
-                            <svg viewBox="0 0 511.998 511.998" width="20px" height="20px" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M502.727 190.218a7.5 7.5 0 00-7.5 7.5v161.71c0 26.45-9.287 43.54-23.66 43.54-4.678 0-7.149-3.171-12.076-10.958-5.091-8.044-12.062-19.062-26.964-19.062-11.654 0-15.168 13.991-16.49 19.258-2.208 8.793-3.639 20.572-5.154 33.042-3.678 30.28-8.715 71.749-27.405 71.749-12.31 0-17.632-14.789-24.934-39.146-8.171-27.257-18.374-61.172-53.77-59.081-7.396.431-14.387-2.817-18.267-8.497-5.602-8.193-4.657-16.498-2.878-22.022 2.811-8.727 9.439-15.774 14.312-17.649 27.019-.481 47.147-8.167 59.862-22.862 12.578-14.538 14.177-31.867 14.057-40.626 17.49-9.057 28.953-21.989 34.104-38.499 8.036-25.758-1.669-53.29-8.173-67.42 33.874-7.65 45.751-31.213 49.424-41.691 2.16-6.165 3.272-12.5 3.395-18.649l33.435 33.435c4.412 4.412 7.698 9.861 9.502 15.76a7.5 7.5 0 0014.344-4.386c-2.52-8.238-7.098-15.838-13.238-21.979L366.569 15.6C356.509 5.54 343.134 0 328.909 0c-14.227 0-27.602 5.54-37.661 15.6-10.059 10.059-15.599 23.434-15.599 37.66 0 .291.017.579.021.869l-2.779-2.779c-10.06-10.06-23.431-15.599-37.652-15.599-14.228 0-27.604 5.54-37.663 15.599-13.729 13.729-18.374 33.149-13.951 50.736a53.658 53.658 0 00-13.106-1.615c-14.24 0-27.617 5.541-37.663 15.599-20.764 20.765-20.764 54.551 0 75.316l2.777 2.777c-.291-.005-.58-.021-.872-.021-14.233 0-27.606 5.541-37.652 15.6-10.061 10.061-15.602 23.436-15.602 37.662s5.542 27.599 15.602 37.654l20.61 20.612c-11.465 5.689-23.461 12.31-35.212 19.464a7.5 7.5 0 007.801 12.813c12.959-7.89 26.208-15.109 38.625-21.063l66.336 66.342c-17.643 39.276-43.532 78.45-58.204 93.13-13.745 13.74-31.794 20.609-49.848 20.608-18.05-.001-36.105-6.87-49.845-20.606-27.478-27.488-27.478-72.212-.002-99.697 6.089-6.089 16.184-14.161 28.427-22.729 3.394-2.375 4.219-7.051 1.844-10.445s-7.052-4.219-10.445-1.844c-12.937 9.054-23.745 17.723-30.434 24.412-33.322 33.334-33.322 87.572.003 120.907 16.667 16.661 38.558 24.992 60.451 24.991 21.893 0 43.788-8.332 60.456-24.994 15.295-15.304 40.51-52.942 58.912-92.419l18.61 18.612c10.063 10.05 23.438 15.585 37.661 15.585 13.995 0 27.155-5.367 37.148-15.108 1.864.176 3.753.228 5.658.115 21.931-1.295 29.495 18.327 38.515 48.415 7.003 23.361 14.94 49.838 39.302 49.838 31.979 0 37.699-47.097 42.296-84.94 1.687-13.881 4.201-34.586 7.687-39.077 5.715.415 8.719 4.721 13.355 12.049 5.057 7.992 11.35 17.938 24.752 17.938 23.485 0 38.66-22.979 38.66-58.54v-161.71a7.5 7.5 0 00-7.501-7.499zM301.855 80.313c-7.227-7.226-11.206-16.834-11.206-27.053 0-10.22 3.979-19.828 11.206-27.054C309.081 18.98 318.689 15 328.909 15c10.219 0 19.827 3.98 27.053 11.206l72.143 72.143.018.02c7.679 7.683 9.709 22.559 4.936 36.174-6.208 17.711-22.127 29.609-43.948 33.024zm-93.672-18.357c7.227-7.226 16.835-11.206 27.057-11.206 10.214 0 19.819 3.979 27.045 11.206l118.132 118.133c2.816 5.01 19.735 36.857 11.217 64.092-3.851 12.312-12.62 22.136-26.065 29.275L208.183 116.069c-14.919-14.919-14.919-39.194 0-54.113zm-64.72 118.823c-14.916-14.916-14.916-39.187.003-54.106 7.216-7.224 16.824-11.203 27.054-11.203s19.838 3.979 27.057 11.206l159.236 159.237c.239 5.616-.238 20.425-10.463 32.142-9.733 11.152-25.911 17.032-48.085 17.525zm119.392 232.959c-10.22 0-19.83-3.977-27.057-11.195L107.714 274.448c-7.227-7.223-11.207-16.828-11.207-27.046 0-10.219 3.98-19.827 11.212-27.058 7.215-7.225 16.819-11.203 27.042-11.203 10.23 0 19.838 3.979 27.057 11.206l121.741 121.741c-6.22 5.264-11.458 13.028-14.208 21.566-3.968 12.321-2.272 24.782 4.772 35.084 2.465 3.608 5.621 6.653 9.232 9.05-6.07 3.868-13.122 5.95-20.5 5.95z"/>
-                            </svg>
-                            <a href="/">
-                                <span class="aside-menu__item--name">Сладкие пироги</span>
-                            </a>
-                        </li>
-                        <li class="aside-menu__item js-aside-item active">
-                            <svg viewBox="0 0 512.005 512.005" width="23px" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M501.746 239.958c-10.212-10.194-26.379-16.316-41.121-18.862-37.645-63.998-117.321-105.094-204.62-105.094-87.198 0-166.837 41.031-204.521 104.927-13.749 2.253-26.518 7.618-37.513 15.859-7.46 5.594-12.294 13.757-13.613 22.987-1.318 9.229 1.037 18.42 6.631 25.878 9.712 12.948 26.569 17.367 41.054 11.442l28.664 72.581c3.374 8.545 10.396 26.327 29.3 26.327h299.998c18.904 0 25.926-17.781 29.3-26.327l28.623-72.48c12.774 5.178 27.68 2.406 37.825-7.738 6.611-6.61 10.253-15.399 10.253-24.748-.001-9.348-3.643-18.137-10.26-24.752zM256.005 136.002c75.053 0 143.695 32.523 180.189 84.106-18.981 1.678-29.929 8.365-38.214 13.43-6.634 4.056-10.346 6.172-15.711 6.172s-9.077-2.117-15.712-6.172c-9.544-5.836-22.616-13.828-47.443-13.828-24.828 0-37.9 7.992-47.445 13.828-6.634 4.056-10.346 6.172-15.711 6.172s-9.077-2.117-15.711-6.172c-9.545-5.835-22.617-13.828-47.444-13.828-24.828 0-37.9 7.992-47.445 13.828-6.634 4.056-10.345 6.172-15.71 6.172s-9.077-2.117-15.712-6.172c-8.271-5.057-19.198-11.73-38.124-13.421 36.494-51.583 105.16-84.115 180.193-84.115zM416.702 362.33c-4.516 11.435-7.343 13.672-10.698 13.672H106.006c-3.356 0-6.183-2.237-10.698-13.673L66.63 289.714c5.289.037 8.996 2.149 15.572 6.169 9.546 5.835 22.618 13.828 47.445 13.828 24.828 0 37.899-7.992 47.444-13.828 6.634-4.056 10.346-6.172 15.711-6.172s9.077 2.117 15.711 6.172c9.545 5.835 22.617 13.828 47.444 13.828 24.828 0 37.9-7.992 47.444-13.828 6.635-4.056 10.347-6.172 15.712-6.172s9.077 2.117 15.711 6.172c9.545 5.835 22.617 13.828 47.444 13.828s37.899-7.992 47.444-13.828c6.615-4.044 10.325-6.159 15.666-6.171zm70.909-87.015c-5.2 5.2-13.313 5.885-19.287 1.632a9.82 9.82 0 00-.632-.415c-5.468-3.3-12.149-6.821-22.268-6.821-11.244 0-18.818 4.63-26.144 9.109-8.758 5.354-17.813 10.891-37.012 10.891s-28.254-5.537-37.012-10.891c-7.325-4.479-14.899-9.109-26.144-9.109s-18.819 4.63-26.144 9.109c-8.758 5.354-17.814 10.891-37.013 10.891s-28.254-5.537-37.012-10.891c-7.325-4.479-14.899-9.109-26.144-9.109s-18.819 4.631-26.144 9.109c-8.758 5.354-17.813 10.891-37.012 10.891s-28.255-5.537-37.013-10.891c-7.325-4.479-14.899-9.109-26.144-9.109-10.306 0-16.88 3.515-23.81 7.762-6.471 3.952-15.12 2.276-19.694-3.821a14.8 14.8 0 01-2.83-11.048 14.797 14.797 0 015.811-9.812c11.416-8.558 25.43-13.081 40.523-13.081 19.198 0 28.255 5.537 37.013 10.891 7.324 4.479 14.898 9.109 26.144 9.109 11.244 0 18.818-4.63 26.143-9.109 8.758-5.354 17.814-10.891 37.013-10.891s28.254 5.537 37.012 10.891c7.325 4.479 14.899 9.109 26.144 9.109 11.244 0 18.818-4.63 26.144-9.108 8.758-5.355 17.813-10.892 37.013-10.892 19.197 0 28.254 5.537 37.012 10.891 7.324 4.478 14.898 9.109 26.144 9.109 11.244 0 18.818-4.63 26.144-9.109 8.758-5.354 17.813-10.891 37.012-10.891 13.647 0 33.161 5.387 42.187 14.396 2.833 2.833 4.394 6.599 4.394 10.604s-1.561 7.771-4.394 10.604z"/>
-                                <path d="M256.042 198.143c5.522 0 10-4.477 10-10v-20c0-5.523-4.478-10-10-10s-10 4.477-10 10v20c0 5.523 4.477 10 10 10zm-65.47-2.929a9.972 9.972 0 007.071-2.929l14.143-14.142c3.905-3.905 3.905-10.237 0-14.142-3.904-3.905-10.234-3.905-14.143 0L183.5 178.143c-3.905 3.905-3.905 10.237 0 14.142a9.972 9.972 0 007.072 2.929zm123.868-2.928c1.953 1.953 4.512 2.929 7.071 2.929s5.118-.977 7.071-2.929c3.905-3.905 3.905-10.237 0-14.142l-14.143-14.142c-3.906-3.905-10.236-3.905-14.143 0-3.905 3.905-3.905 10.237 0 14.142z"/>
-                            </svg>
-                            <a href="/">
-                                <span class="aside-menu__item--name">Сытные пироги</span>
-                            </a>
-                        </li>
-                        <li class="aside-menu__item js-aside-item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="23px" viewBox="0 0 394.705 394.705">
-                                <path d="M389.851 200.415c-6.627-6.627-20.963-12.182-37.567-18.613-12.017-4.656-24.439-9.469-31.986-14.196-12.597-7.886-23.429-17.36-33.91-26.52C264.571 122.014 243.963 104 212.127 104c-39.777 0-69.77 20.05-104.498 43.264-5.606 3.746-11.346 7.583-17.277 11.433-21.857 14.182-39.03 20.746-52.83 26.016-12.367 4.726-22.134 8.457-29.38 15.703-7.767 7.765-8.62 15.217-7.967 20.099 1.707 12.733 14.751 20.526 16.234 21.373a6.828 6.828 0 009.313-2.538 6.826 6.826 0 00-2.539-9.313c-1.821-1.041-8.76-6.011-9.474-11.334-.133-.99-.536-4.011 4.087-8.634 5.187-5.187 13.329-8.298 24.596-12.6 13.643-5.214 32.326-12.351 55.393-27.32 5.984-3.884 11.774-7.753 17.43-11.537 32.879-21.98 61.276-40.96 96.91-40.96 26.709 0 44.58 15.623 65.273 33.71 10.88 9.513 22.134 19.35 35.651 27.817 8.648 5.417 21.69 10.467 34.301 15.353 13.244 5.13 28.257 10.948 32.846 15.537 3.326 3.331-3.724 14.517-10.247 21.074a6.83 6.83 0 00.017 9.65 6.823 6.823 0 009.643-.003c.234-.234 5.763-5.794 9.987-12.834 9.072-15.115 4.052-23.744.255-27.541z"/>
-                                <path d="M10.121 229.261l26.334 61.44h323.028l26.332-61.44H10.121zm340.362 47.787H45.456L30.83 242.914h334.28l-14.627 34.134z"/>
-                                <path d="M197.969 236.088a6.828 6.828 0 00-6.827 6.827v40.96a6.828 6.828 0 0013.654 0v-40.96a6.828 6.828 0 00-6.827-6.827zm13.653-109.227a6.828 6.828 0 00-6.827 6.827v10.24a6.828 6.828 0 0013.654 0v-10.24a6.828 6.828 0 00-6.827-6.827zm-25.894 8.827a6.825 6.825 0 00-9.653 0l-10.24 10.24a6.825 6.825 0 004.826 11.653 6.796 6.796 0 004.826-2l10.24-10.24a6.824 6.824 0 00.001-9.653zm68.267 10.24l-10.24-10.24a6.825 6.825 0 00-9.653 0 6.825 6.825 0 000 9.653l10.24 10.24a6.807 6.807 0 004.826 2 6.796 6.796 0 004.826-2 6.824 6.824 0 00.001-9.653zM81.651 281.999l-13.653-47.787a6.821 6.821 0 00-8.439-4.687 6.828 6.828 0 00-4.687 8.44l13.653 47.787a6.833 6.833 0 006.56 4.953c.62 0 1.254-.087 1.879-.266a6.827 6.827 0 004.687-8.44zm254.727-52.473a6.824 6.824 0 00-8.44 4.687L314.285 282a6.823 6.823 0 004.687 8.439 6.862 6.862 0 001.881.266 6.829 6.829 0 006.559-4.953l13.653-47.787a6.825 6.825 0 00-4.687-8.439zm-40.96 0a6.824 6.824 0 00-8.439 4.687L273.326 282a6.823 6.823 0 004.687 8.439 6.862 6.862 0 001.881.266 6.829 6.829 0 006.559-4.953l13.653-47.787a6.827 6.827 0 00-4.688-8.439zm-172.807 52.473l-13.653-47.787a6.823 6.823 0 00-8.439-4.687 6.828 6.828 0 00-4.687 8.44l13.653 47.787a6.833 6.833 0 006.56 4.953c.62 0 1.254-.087 1.879-.266a6.827 6.827 0 004.687-8.44zm41.154.909l-6.827-47.787c-.532-3.731-3.966-6.308-7.723-5.791a6.825 6.825 0 00-5.791 7.723l6.827 47.787a6.825 6.825 0 1013.514-1.932zm82.956-53.577c-3.743-.546-7.192 2.055-7.723 5.791l-6.827 47.787a6.827 6.827 0 006.767 7.793c3.34 0 6.26-2.456 6.746-5.861l6.827-47.787a6.824 6.824 0 00-5.79-7.723z"/>
-                            </svg>
-                            <a href="/">
-                                <span class="aside-menu__item--name">Постные пироги</span>
-                            </a>
-                        </li>
-                    </ul>
-                </aside>
                 <main class="main">
-                    <div class="item">
-                        <div class="item-row">
-                            <div class="item__img">
-                                <img src="assets/img/item.jpg" alt="пирог">
-                            </div>
-                            <div class="item-info">
-                                <div class="item__name">
-                                    Лесная поляна
-                                </div>
-                                <div class="item__desc">
-                                    <span class="mod-dark">Состав:</span> мука, сахар, яйцо куриное, пшеничная мука, яблоко, разрыхлитель
-                                </div>
-                                <div class="item__weight">
-                                    <span class="mod-dark">Вес:</span> 1кг.
-                                </div>
-                                <div class="item__line"></div>
-                                <div class="item__price">
-                                    1 250 руб. / шт.
-                                </div>
-                                <div class="item-row">
-                                    <div class="item__buttons">
-                                        <span class="item__btn js-minus">-</span>
-                                        <input class="item__counter js-input" type="tel" value="1" data-max="24" readonly="">
-                                        <span class="item__btn js-plus">+</span>
-                                    </div>
-                                    <div class="item-add">
-                                        <a class="item-add__btn" href="/">Добавить в корзину</a>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-                        </div>
-                        <a class="item__back" href="/"><< назад к каталогу</a>
+                    <div class="order-complete">
+                        <p class="order-complete__title">заказ сформирован</p>
+                        <p class="order-complete__text">Ваш заказа 3453243241 от 415435 принят.</p>
+                        <p class="order-complete__text">В скором времени с вами свяжется оператор для подтверждения заказа.</p>
+                        <p class="order-complete__text">Оплата заказа: Оплата банковской картой</p>
+                        <a class="order-complete__back" href="/">&lt;&lt; назад к каталогу</a>
+                    </div>
+                    <div class="order-complete__decor">
+                    
                     </div>
                 </main>
             </div>
