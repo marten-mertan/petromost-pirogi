@@ -1934,7 +1934,8 @@ html, body {
   .order-complete__text {
     font-size: 17px;
     line-height: 28px;
-    color: #4c3a2f; }
+    color: #4c3a2f;
+    font-weight: 300; }
   .order-complete__decor {
     position: absolute;
     left: 55%;
