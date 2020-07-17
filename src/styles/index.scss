@@ -1248,7 +1248,7 @@ html, body{
         display: block;
     }
     &-top{
-        color: #de2d42;
+        color: #a92925;
         margin-bottom: 19px;
     }
     &-row{
@@ -1281,7 +1281,7 @@ html, body{
                 height: 0;
                 &:checked{
                     & + span{
-                        background-color: #de2d42;
+                        background-color: #a92925;
                         color: white;
                     }
                 }
@@ -1305,7 +1305,7 @@ html, body{
             margin-bottom: 6px;
             background-color: #f3f3f3;
             &.active{
-                background-color: #de2d42;
+                background-color: #a92925;
                 color: white;
 
             }
@@ -1383,7 +1383,7 @@ html, body{
                 margin-right: 10px;
             }
             &.submit{
-                background-color: #de2d42;
+                background-color: #a92925;
                 color: white;
             }
         }

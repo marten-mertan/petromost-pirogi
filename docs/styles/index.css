@@ -1185,7 +1185,7 @@ html, body {
   .baloon-select-city.active {
     display: block; }
   .baloon-select-city-top {
-    color: #de2d42;
+    color: #a92925;
     margin-bottom: 19px; }
   .baloon-select-city-row {
     display: flex;
@@ -1214,7 +1214,7 @@ html, body {
       width: 0;
       height: 0; }
       .baloon-select-city-form__radio input:checked + span {
-        background-color: #de2d42;
+        background-color: #a92925;
         color: white; }
     .baloon-select-city-form__radio span {
       display: block;
@@ -1233,7 +1233,7 @@ html, body {
     margin-bottom: 6px;
     background-color: #f3f3f3; }
     .baloon-select-city-form__city.active {
-      background-color: #de2d42;
+      background-color: #a92925;
       color: white; }
   .baloon-select-city-form__input {
     position: relative;
@@ -1311,7 +1311,7 @@ html, body {
     .baloon-select-city-form__button:not(:last-child) {
       margin-right: 10px; }
     .baloon-select-city-form__button.submit {
-      background-color: #de2d42;
+      background-color: #a92925;
       color: white; }
   .baloon-select-city-tail {
     display: none;
