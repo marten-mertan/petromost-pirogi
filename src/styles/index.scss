@@ -363,8 +363,8 @@ html, body{
         }
         &__number{
             font-family: "CyrillicOld";
-            font-size: 27px;
-            line-height: 31px;
+            font-size: 25px;
+            line-height: 1;
             color: #720b23;
             text-align: right;
             text-decoration: none;
@@ -373,7 +373,7 @@ html, body{
             align-items: center;
             justify-content: flex-end;
             img{
-                margin-right: 10px;
+                margin-right: 12px;
                 margin-top: -2px;
             }
             &-mobile{
@@ -391,10 +391,11 @@ html, body{
         }
     }
     &__text{
-        font-size: 27px;
-        line-height: 31px;
+        font-size: 25px;
+        line-height: 1;
         font-family: "CyrillicOld";
         color: #720b23;
+        margin-bottom: 12px;
         &-mobile{
             font-size: 16px;
             line-height: 1;
@@ -403,8 +404,8 @@ html, body{
     }
     &-date{
         text-align: right;
-        font-size: 27px;
-        line-height: 31px;
+        font-size: 25px;
+        line-height: 1;
         font-family: "CyrillicOld";
         @media screen and (max-width: 1024px){
             display: none;
@@ -416,7 +417,7 @@ html, body{
             display: flex;
             flex-direction: row;
             align-items: center;
-            justify-content: flex-end;
+            justify-content: flex-start;
             &-mobile{
                 font-size: 16px;
                 line-height: 1;
@@ -426,14 +427,28 @@ html, body{
                 margin-right: 10px;
                 margin-top: -2px;
             }
+            svg{
+                margin-right: 16px;
+            }
+            & + .header-date__number{
+                margin-top: 12px;
+            }
 
         }
         &-mobile{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
             text-align: right;
+            margin-bottom: 10px;
+            svg{
+                margin-right: 12px;
+            }
         }
     }
     &-search{
         position: relative;
+        align-self: flex-start;
         width: 290px;
         @media screen and (max-width: 1024px){
             margin-right: 9px;
@@ -505,7 +520,7 @@ html, body{
             }
         }
         &__text{
-            font-size: 27px;
+            font-size: 25px;
             line-height: 31px;
             font-family: "CyrillicOld";
             color: #720b23;
@@ -636,15 +651,25 @@ html, body{
                     }
                     svg{
                         fill: white;
+                        &.icon-popular{
+                            fill: white;
+                            stroke: white;
+                        }
                     }
                 }
 
             }
             svg{
                 margin-right: 13px;
+                width: 25px;
                 fill: black;
                 @media screen and (max-width: 1024px){
+                    width: auto;
                     margin: 0 0 0 13px;
+                }
+                &.icon-popular{
+                    fill: #a82824;
+                    stroke: #a82824;
                 }
             }
             a{
@@ -2152,4 +2177,14 @@ html, body{
             border-bottom: 1px solid #4c3a2f;
         }
     }
+}
+
+.icon-timer{
+    width: 24px;
+    height: 25px;
+}
+
+.icon-complete{
+    width: 24px;
+    height: 24px;
 }
