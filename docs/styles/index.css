@@ -953,6 +953,7 @@ html, body {
           .category-title__text:after {
             display: block; } }
   .category-item {
+    position: relative;
     border-radius: 20px;
     background-color: #fcfcfc;
     box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.12);
@@ -1134,6 +1135,31 @@ html, body {
       @media screen and (max-width: 1024px) {
         .category-item__counter {
           width: 50px; } }
+    .category-item-labels {
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      max-width: calc(100% - 40px);
+      flex-wrap: wrap;
+      right: 20px;
+      top: 20px;
+      z-index: 1; }
+      @media screen and (max-width: 1024px) {
+        .category-item-labels {
+          right: 12px;
+          top: 12px; } }
+      .category-item-labels__element {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 33px;
+        height: 32px;
+        background: #fff;
+        margin: 0 0 12px 12px;
+        border-radius: 2px; }
 
 .baloon-select-city {
   display: none;
