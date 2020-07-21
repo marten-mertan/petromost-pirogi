@@ -124,9 +124,10 @@ window.onload = function() {
         $('.js-select-city-baloon').removeClass('active');
     });
     
-    $(document).on('click', function(e){
+    $(document).mousedown(function (e){
         var element = $('.js-select-city-baloon');
-        if (element.has(e.target).length === 0){
+        var parent = $('.header-top-address');
+        if (!element.is(e.target) && element.has(e.target).length === 0 && parent.has(e.target).length === 0){
             element.removeClass('active');
         }
     });
