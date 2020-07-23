@@ -876,7 +876,6 @@ html, body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin-bottom: 12px;
     @media screen and (max-width: 1024px){
         display: none;
@@ -996,7 +995,7 @@ html, body{
         width: calc(33% - 20px);
         margin-bottom: 23px;
         &:not(:nth-child(3n)){
-            margin-right: 20px;
+            margin-right: 33px;
         }
         display: flex;
         flex-direction: column;

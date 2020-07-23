@@ -867,7 +867,6 @@ html, body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin-bottom: 12px; }
   @media screen and (max-width: 1024px) {
     .category {
@@ -964,7 +963,7 @@ html, body {
     flex-direction: column;
     margin-bottom: 30px; }
     .category-item:not(:nth-child(3n)) {
-      margin-right: 20px; }
+      margin-right: 33px; }
     @media screen and (max-width: 1024px) {
       .category-item {
         width: calc(50% - 20px);
