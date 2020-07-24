@@ -521,7 +521,7 @@ html, body{
         }
         &__text{
             font-size: 25px;
-            line-height: 31px;
+            line-height: 1;
             font-family: "CyrillicOld";
             color: #720b23;
             @media screen and (max-width: 1024px){
