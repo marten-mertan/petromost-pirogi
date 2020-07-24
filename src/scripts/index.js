@@ -1,4 +1,4 @@
-window.onload = function() {
+$(document).ready(function() {
 
     $('.js-category-slider').slick({
         slidesToShow: 1,
@@ -175,4 +175,4 @@ window.onload = function() {
         document.body.addEventListener('scroll', cartScroll, false);
     }
     
-};
+});
