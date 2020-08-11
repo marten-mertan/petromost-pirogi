@@ -1143,28 +1143,34 @@ html, body {
     .category-item-labels {
       position: absolute;
       display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
+      flex-direction: column;
+      align-items: flex-end;
       max-width: calc(100% - 40px);
-      flex-wrap: wrap;
-      right: 20px;
-      top: 20px;
+      right: 15px;
+      top: 12px;
       z-index: 1; }
       @media screen and (max-width: 1024px) {
         .category-item-labels {
           right: 12px;
-          top: 12px; } }
+          top: 10px; } }
       .category-item-labels__element {
         position: relative;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        width: 33px;
-        height: 32px;
         background: #fff;
-        margin: 0 0 12px 12px;
-        border-radius: 2px; }
+        margin-bottom: 10px;
+        background-color: #efeae8;
+        font-size: 17px;
+        line-height: 1;
+        padding: 3px 10px 5px;
+        font-family: "CyrillicOld";
+        color: #4c3a2f;
+        border-radius: 13px;
+        box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3); }
+        .category-item-labels__element.mod-yellow {
+          background-color: #fff0ce; }
 
 .baloon-select-city {
   display: none;
