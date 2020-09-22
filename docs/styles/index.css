@@ -2085,7 +2085,7 @@ html, body {
     .menu-mobile-popup {
       display: flex; } }
   .menu-mobile-popup.closed {
-    left: -100%; }
+    left: -120%; }
   .menu-mobile-popup .popup-close {
     top: 5px;
     right: 13px;
