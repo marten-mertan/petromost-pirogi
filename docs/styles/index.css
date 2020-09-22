@@ -2074,17 +2074,18 @@ html, body {
   display: none;
   flex-direction: column;
   width: 100vw;
-  height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
   top: 0;
   left: 0;
   background-color: white;
   font-family: "Roboto";
-  z-index: 1000; }
+  z-index: 1000;
+  transition: left .3s ease; }
   @media screen and (max-width: 1024px) {
     .menu-mobile-popup {
       display: flex; } }
   .menu-mobile-popup.closed {
-    display: none; }
+    left: -100%; }
   .menu-mobile-popup .popup-close {
     top: 5px;
     right: 13px;

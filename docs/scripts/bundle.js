@@ -276,6 +276,14 @@ $(document).ready(function() {
     $(document).on('click','.js-menu-filter-item', function(e){
         $(this).parents('.js-menu-mobile-popup').addClass('closed');
     });
+
+    // 100vh на мобилках
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+    window.addEventListener('resize', () => {
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+    });
 });
 
 /***/ })
