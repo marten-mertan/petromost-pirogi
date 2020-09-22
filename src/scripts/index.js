@@ -175,4 +175,15 @@ $(document).ready(function() {
         document.body.addEventListener('scroll', cartScroll, false);
     }
     
+    $(document).on('click','.js-menu-mobile', function(e){
+        $('.js-menu-mobile-popup').removeClass('closed');
+    });
+
+    $(document).on('click','.js-menu-mobile-close', function(e){
+        $(this).parents('.js-menu-mobile-popup').addClass('closed');
+    });
+
+    $(document).on('click','.js-menu-filter-item', function(e){
+        $(this).parents('.js-menu-mobile-popup').addClass('closed');
+    });
 });
