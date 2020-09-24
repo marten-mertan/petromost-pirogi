@@ -1618,9 +1618,16 @@ html, body{
     }
     &-bottom{
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        &-row{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            &:not(:last-child){
+                margin-bottom: 12px;
+            }
+        }
 
     }
     &__btn{
@@ -1639,7 +1646,9 @@ html, body{
         &.mod-red{
             color: #fff;
             background-color: #b13828;
-
+        }
+        &.mod-right{
+            margin-left: auto;
         }
     }
 }
@@ -2039,12 +2048,20 @@ html, body{
     }
     &-bottom{
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
         margin-top: auto;
         margin-bottom: auto;
+        &-row{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            &:not(:last-child){
+                margin-bottom: 12px;
+            }
+        }
     }
     &__btn{
+        max-width: calc(50% - 17px);
         font-size: 16px;
         line-height: 18px;
         color: #676767;
@@ -2063,7 +2080,9 @@ html, body{
         &.mod-red{
             color: #fff;
             background-color: #b13828;
-
+        }
+        &.mod-right{
+            margin-left: auto;
         }
     }
     .cart-mini-left{
