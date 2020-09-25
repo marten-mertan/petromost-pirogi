@@ -1874,11 +1874,16 @@ html, body {
   .cart-mini-mobile-bottom-row {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: stretch; }
     .cart-mini-mobile-bottom-row:not(:last-child) {
       margin-bottom: 12px; }
 
 .cart-mini-mobile__btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   max-width: calc(50% - 17px);
   font-size: 16px;
   line-height: 18px;

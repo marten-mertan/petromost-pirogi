@@ -2055,12 +2055,17 @@ html, body{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            align-items: stretch;
             &:not(:last-child){
                 margin-bottom: 12px;
             }
         }
     }
     &__btn{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
         max-width: calc(50% - 17px);
         font-size: 16px;
         line-height: 18px;
