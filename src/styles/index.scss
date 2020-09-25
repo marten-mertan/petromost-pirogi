@@ -1964,12 +1964,14 @@ html, body{
         &-body{
             display: flex;
             flex-direction: column;
-            min-height: 100%;
+            justify-content: flex-start;
+            height: 100%;
             padding: 0 20px 27px;
             overflow-y: scroll;
         }
     }
     &-row{
+        flex-shrink: 0;
         padding: 12px 0 20px;
         border-bottom: 1px dotted #000;
         display: flex;
@@ -2051,6 +2053,7 @@ html, body{
         flex-direction: column;
         margin-top: auto;
         margin-bottom: auto;
+        flex-shrink: 0;
         &-row{
             display: flex;
             flex-direction: row;
