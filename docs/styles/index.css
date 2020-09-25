@@ -1789,7 +1789,7 @@ html, body {
   .cart-mini-mobile-popup-body {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    min-height: 100%;
     padding: 0 20px 27px;
     overflow-y: scroll; }
 
