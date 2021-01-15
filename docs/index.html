@@ -10,8 +10,15 @@
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="styles/vendor/slick/slick.css">
     <link rel="stylesheet" href="styles_old/index_main.css">
+    <link rel="stylesheet" href="styles_old/template.css">
 
     <link rel="stylesheet" href="styles/index.css">
+
+    <script src="scripts/vendor/jquery-1.8.3.min.js"></script>
+    <script src="scripts/vendor/slick/slick.js"></script>
+    <script src="scripts/vendor/baron/baron.js"></script>
+    <script src="scripts_old/product-card.js"></script>
+    <script src="scripts/bundle.js"></script>
 </head>
 <body>
     <div class="site">
@@ -73,7 +80,7 @@
                         <a class="header-top-vk" target="_blank" href="http://vk.com/petromost">
                             <span class="header-top-vk__text">Мы Вконтакте</span>
                         </a>
-                        <a href="/" class="header-top-auth">
+                        <a href="#" class="header-top-auth auth__reg">
                             <span class="header-top-auth__text">Вход</span>
                         </a>
                         <span class="header-top-divider">/</span>
@@ -1121,7 +1128,75 @@
             </div>
         </footer>
     </div>
+    <div class="mfp-bg mfp-ready"></div>
     <div class="popup-background"></div>
+
+    <div class="mfp-wrap popup_auth popup-auth-2020" tabindex="-1" style="overflow-x: hidden; overflow-y: scroll;">
+    <div class="mfp-container mfp-inline-holder">
+        <div class="mfp-content">
+            <div class="c-popup ">
+                <div class="c-popup__body">
+                    <div class="popup-auth-2020__close js-popup-close"></div>
+                    <div class="popup-auth-2020-head">
+                        <div class="popup-auth-2020-head-icon">
+                            <svg class="icon-user-auth">
+                                <use xlink:href="icons/all.svg#icon-user-auth"></use>
+                            </svg>
+                        </div>
+                        <div class="popup-auth-2020-head-title">
+                            <span class="popup-auth-2020-head-title__decor"></span>
+                            <span class="popup-auth-2020-head-title__text">Вход в аккаунт</span>
+                            <span class="popup-auth-2020-head-title__decor"></span>
+                        </div>
+                    </div>
+                    <div class="popup-auth-2020-body">
+                        <div class="popup-auth-2020-body-inputs">
+                            <div class="popup-auth-2020-input">
+                                <div class="popup-auth-2020-input__text">
+                                    Для входа на сайт введите ваш номер мобильного телефона
+                                </div>
+                                <label class="popup-auth-2020-input-wrap">
+                                    <input class="inp" type="text" name="" placeholder="+7 (___) ___ __ __">
+                                </label>
+                            </div>
+                            <div class="popup-auth-2020-input">
+                                <div class="popup-auth-2020-input__text">
+                                    Введите полученный код подтверждения из СМС сообщения
+                                </div>
+                                <label class="popup-auth-2020-input-wrap">
+                                    <input class="inp" type="text" name="" placeholder="">
+                                </label>
+                            </div>
+                        </div>
+                        <a href="" class="popup-auth-2020-button">
+                            Отправить код подтверждения еще раз
+                        </a>
+                        <div class="popup-auth-2020-alter">
+                            <div class="popup-auth-2020-alter__text">
+                                Другой способ входа:
+                            </div>
+                            <a href="" class="popup-auth-2020-alter-vk">
+                                <svg class="icon-popup-vk">
+                                    <use xlink:href="icons/all.svg#icon-popup-vk"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="popup-auth-2020-alter-password">
+                                <svg class="icon-popup-key">
+                                    <use xlink:href="icons/all.svg#icon-popup-key"></use>
+                                </svg>
+                                <span class="popup-auth-2020-alter-password__text">Войти с паролем</span>
+                            </a>
+
+                        </div>
+                    </div>
+                        
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+    
     <div class="cart-mini-mobile-popup js-cart-mini-mobile-popup closed">
         <div class="cart-mini-mobile-popup-head">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.085 512.085">
@@ -1372,9 +1447,5 @@
             
         </div>
     </div>
-    <script src="scripts/vendor/jquery-1.8.3.min.js"></script>
-    <script src="scripts/vendor/slick/slick.js"></script>
-    <script src="scripts/vendor/baron/baron.js"></script>
-    <script src="scripts/bundle.js"></script>
 </body>
 </html>
