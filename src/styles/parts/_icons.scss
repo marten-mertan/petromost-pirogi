@@ -1,0 +1,20 @@
+.icon-header-time{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    fill: #494949;
+    @media screen and (max-width: 1024px){
+        width: 13px;
+        height: 13px;
+    }
+}
+.icon-header-user{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    fill: #494949;
+    @media screen and (max-width: 1024px){
+        width: 13px;
+        height: 13px;
+    }
+}

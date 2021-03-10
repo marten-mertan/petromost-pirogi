@@ -43,13 +43,23 @@ html, body{
     background-repeat: no-repeat;
     z-index: 2;
     &-top{
+        position: relative;
+        z-index: 1;
         background-color: #f5f5f5;
+        background-size: auto;
+        background-position: 50% 50%;
+        background-image: url(../assets/img/content-texture.png);
+        background-repeat: repeat;
         @media screen and (max-width: 1024px){
         }
         a{
             text-decoration: none;
         }
+        img {
+            display: block;
+        }
         .js-select-city{
+            display: flex;
             position: relative;
             border-bottom: 1px solid #484848;
             color: #484848;
@@ -70,10 +80,11 @@ html, body{
             position: relative;
             display: flex;
             flex-direction: row;
+            align-items: center;
             width: 100%;
-            padding: 17px 0;
+            padding: 8px 0;
             @media screen and (max-width: 1024px){
-                padding: 9px 20px 7px;
+                padding: 6px 20px 6px;
                 align-items: center;
             }
         }
@@ -87,12 +98,19 @@ html, body{
             width: 100%;
         }
         &-logo{
+            display: block;
             font-family: "Roboto";
             font-size: 15px;
             line-height: 18px;
             font-weight: bold;
             text-transform: uppercase;
             margin-right: 40px;
+            @media screen and (max-width: 1024px){
+                font-size: 11px;
+                line-height: 13px;
+                margin-right: 8px;
+                margin-bottom: 1px;
+            }
             .mod-green{
                 color: #5ab55e;
             }
@@ -104,7 +122,8 @@ html, body{
             display: flex;
             flex-direction: row;
             font-family: "Roboto";
-            font-size: 15px;
+            font-size: 14px;
+            line-height: 16px;
             color: #484848;
             margin-right: 70px;
             position: relative;
@@ -116,14 +135,15 @@ html, body{
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                max-width: 200px;
+                max-width: 100px;
             }
         }
         &-vk{
             position: relative;
             display: block;
             font-family: "Roboto";
-            font-size: 15px;
+            font-size: 14px;
+            line-height: 16px;
             color: #5181b8;
             border-bottom: 1px solid #5181b8;
             @media screen and (max-width: 1024px){
@@ -141,7 +161,7 @@ html, body{
                 background: url(../assets/img/vk.svg) no-repeat right;
                 @media screen and (max-width: 1024px){
                     position: relative;
-                    top: 0;
+                    top: -2px;
                     left: 0;
                     right: 0;
                     bottom: 0;
@@ -226,11 +246,73 @@ html, body{
                     right: -20px;
                     top: 0;
                 }
-
             }
-
+        }
+        &-right{
+            display: flex;
+            flex-direction: row;
+            margin-left: auto;
+            @media screen and (max-width: 1024px){
+                margin-left: 0;
+            }
         }
         &-divider{
+            @media screen and (max-width: 1024px){
+                display: none;
+            }
+        }
+    }
+    &-new{
+        &-logo{
+            margin: -6px 10px -20px 0;
+            @media screen and (max-width: 1024px){
+                display: none;
+            }
+
+            &-mobile{
+                display: none;
+                @media screen and (max-width: 1024px){
+                    display: block;
+                    margin: -6px 10px -20px 0;
+                    margin-right: 8px;
+                }
+            }
+            &-text{
+                margin: 0 60px 0 0;
+                @media screen and (max-width: 1024px){
+                    display: none;
+                }
+
+                &-mobile{
+                    display: none;
+                    @media screen and (max-width: 1024px){
+                        display: block;
+                    }
+
+                }
+            }
+        }
+        &-link{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 34px;
+            @media screen and (max-width: 1024px){
+                margin-left: 15px;
+            }
+        }
+        &-icon{
+            display: flex;
+            margin-bottom: 2px;
+            transition: all .2s ease;
+        }
+        &-text{
+            font-size: 14px;
+            line-height: 16px;
+            color: #494949;
+            text-align: center;
+            transition: all .2s ease;
+            border-bottom: 1px solid #494949;
             @media screen and (max-width: 1024px){
                 display: none;
             }

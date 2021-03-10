@@ -26,7 +26,22 @@
             <div class="header-top">
                 <div class="container">
                     <div class="header-top-content">
-                        <a class="header-top-logo" href="/"><span class="mod-red">Online</span> <span class="mod-green">Петромост</span></a>
+                        <a href="/" class="header-new-logo">
+                            <img src="assets/img/petrovsky-logo.png" alt="Петровский лого">
+                        </a>
+                        <a href="/" class="header-new-logo-text">
+                            <img src="assets/img/petrovsky-logo-text.png" alt="Прямо из печи!">
+                        </a>
+                        <a href="/" class="header-new-logo-mobile">
+                            <img src="assets/img/petrovsky-logo-mobile.png" alt="Петровский лого">
+                        </a>
+                        <div class="header-new-logo-col">
+                            <a class="header-top-logo" href="/"><span class="mod-green">Online</span> <span class="mod-red">Петромост</span></a>
+                            <a href="/" class="header-new-logo-text-mobile">
+                                <img src="assets/img/petrovsky-logo-text-mobile.png" alt="Петровский лого">
+                            </a>
+                        
+                        </div>
                         <div class="header-top-address">
                             Ваш адрес:
                             <a href="#" class="js-select-city">
@@ -80,15 +95,35 @@
                         <a class="header-top-vk" target="_blank" href="http://vk.com/petromost">
                             <span class="header-top-vk__text">Мы Вконтакте</span>
                         </a>
-                        <a href="#" class="header-top-auth auth__reg">
-                            <span class="header-top-auth__text">Вход</span>
-                        </a>
-                        <span class="header-top-divider">/</span>
-                        <a href="/" class="header-top-auth-reg">
-                            <span class="header-top-auth__text">Регистрация</span>
-                        </a>
+                        <div class="header-top-right">
+                            <a href="/" class="header-new-link">
+                                <div class="header-new-icon">
+                                    <svg class="icon-header-time">
+                                        <use xlink:href="icons/all.svg#icon-header-time"></use>
+                                    </svg>
+                                </div>
+                                <div class="header-new-text">
+                                    Статус заказа
+                                </div>
+                            </a>
+                            <a href="/" class="header-new-link">
+                                <div class="header-new-icon">
+                                    <svg class="icon-header-user">
+                                        <use xlink:href="icons/all.svg#icon-header-user"></use>
+                                    </svg>
+                                </div>
+                                <div class="header-new-text">
+                                    Вход / Регистрация
+                                </div>
+                            </a>
+                        
+                        </div>
+                        
                     </div>
                 </div>
+            </div>
+            <div class="header-top-partial-1">
+            
             </div>
             <div class="header-body">
                 <div class="container">
@@ -1447,5 +1482,7 @@
             
         </div>
     </div>
+    <script src="scripts/vendor/svg4everybody.min.js"></script>
+    <script>svg4everybody(); // run it now or whenever you are ready</script>
 </body>
 </html>
