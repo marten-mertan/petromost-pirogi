@@ -43,7 +43,7 @@ function buildStyles() {
 
 function buildVendorScripts() {
   return src('src/scripts/vendor/**/*.js')
-    .pipe(babel({ presets: ['@babel/preset-env'] }))
+    //.pipe(babel({ presets: ['@babel/preset-env'] }))
     .pipe(dest('docs/scripts/vendor/'));
 }
 
