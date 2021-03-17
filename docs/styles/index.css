@@ -18,6 +18,16 @@
       width: 13px;
       height: 13px; } }
 
+.icon-header-exit {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  fill: #494949; }
+  @media screen and (max-width: 1024px) {
+    .icon-header-exit {
+      width: 13px;
+      height: 13px; } }
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -822,6 +832,7 @@ html, body {
       border-bottom: 1px solid #5181b8; }
       @media screen and (max-width: 1024px) {
         .header-top-vk {
+          display: none;
           margin-left: auto;
           border: none; } }
       .header-top-vk:after {
@@ -914,7 +925,7 @@ html, body {
       margin-left: auto; }
       @media screen and (max-width: 1024px) {
         .header-top-right {
-          margin-left: 0; } }
+          margin-left: auto; } }
     @media screen and (max-width: 1024px) {
       .header-top-divider {
         display: none; } }
@@ -931,7 +942,7 @@ html, body {
           margin: -6px 10px -20px 0;
           margin-right: 8px; } }
     .header-new-logo-text {
-      margin: 0 60px 0 0; }
+      margin: 0 20px 0 0; }
       @media screen and (max-width: 1024px) {
         .header-new-logo-text {
           display: none; } }
@@ -947,7 +958,7 @@ html, body {
     margin-left: 34px; }
     @media screen and (max-width: 1024px) {
       .header-new-link {
-        margin-left: 15px; } }
+        margin-left: 12px; } }
   .header-new-icon {
     display: flex;
     margin-bottom: 2px;
