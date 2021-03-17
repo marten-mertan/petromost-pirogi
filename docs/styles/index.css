@@ -813,7 +813,7 @@ html, body {
       color: #484848;
       margin-right: 70px;
       position: relative; }
-      @media screen and (max-width: 1024px) {
+      @media screen and (max-width: 1320px) {
         .header-top-address {
           display: none; } }
       .header-top-address__text {
@@ -851,9 +851,14 @@ html, body {
             left: 0;
             right: 0;
             bottom: 0; } }
-      @media screen and (max-width: 1024px) {
-        .header-top-vk__text {
-          display: none; } }
+      .header-top-vk__text {
+        max-width: 112px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+        @media screen and (max-width: 1024px) {
+          .header-top-vk__text {
+            display: none; } }
     .header-top-auth {
       positioN: relative;
       display: block;
@@ -970,6 +975,11 @@ html, body {
     text-align: center;
     transition: all .2s ease;
     border-bottom: 1px solid #494949; }
+    .header-new-text.mod-overflow {
+      max-width: 112px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
     @media screen and (max-width: 1024px) {
       .header-new-text {
         display: none; } }
